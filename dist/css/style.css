@@ -158,32 +158,53 @@ h6 {
 }
 
 .btn {
-  padding: 24px 48px;
+  padding: 16px 48px;
   border-radius: 99px;
-  font-weight: 700;
+  font-family: "FixelDisplay-SemiBold";
+  line-height: 120%;
   display: inline-block;
-  background-color: #3F69FF;
-  color: #FFFFFF;
-  -webkit-box-shadow: 0px 7px 16px 0px rgba(63, 105, 255, 0.5), 0px 4px 8px 0px rgba(63, 105, 255, 0.3), 0px 2px 4px 0px rgba(63, 105, 255, 0.5);
-          box-shadow: 0px 7px 16px 0px rgba(63, 105, 255, 0.5), 0px 4px 8px 0px rgba(63, 105, 255, 0.3), 0px 2px 4px 0px rgba(63, 105, 255, 0.5);
+  background-color: #FFFFFF;
+  color: #2B2B42;
 }
 
 .btn:hover {
-  background: rgba(63, 105, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
 
 .btn-2 {
   padding: 16px 48px;
   border-radius: 99px;
-  background-color: #2B2B42;
-  color: #FFFFFF;
   font-family: "FixelDisplay-SemiBold";
   line-height: 120%;
+  background-color: #2B2B42;
+  color: #FFFFFF;
 }
 
 .btn-2:hover {
   background: rgba(43, 43, 66, 0.9);
+}
+
+.padding-wrap {
+  padding: 70px 16px;
+}
+
+.img-maxW-100 {
+  max-width: 100%;
+  height: auto;
+}
+
+.box-flex-50 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.box-flex-50 > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 body {
@@ -559,6 +580,25 @@ video {
   padding: 16px;
 }
 
+.readyToOrder__body {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 64px;
+  border-radius: 64px;
+  gap: 32px;
+  background: -o-radial-gradient(50% 0%, 100% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
+  background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -766,37 +806,24 @@ video {
 }
 
 .text-huge {
-  font-weight: 900;
+  font-family: "FixelDisplay-SemiBold";
   line-height: 120%;
   font-size: 72px;
 }
 
 .text-medium {
-  font-weight: 900;
-  line-height: 140%;
-  font-size: 40px;
+  font-family: "FixelDisplay-SemiBold";
+  line-height: 120%;
+  font-size: 28px;
 }
 
 .text-default {
   line-height: 140%;
-  font-size: 24px;
-}
-
-.text-small {
-  line-height: 140%;
   font-size: 18px;
-}
-
-.regular {
-  font-weight: 400;
 }
 
 .bold {
   font-family: "FixelDisplay-Bold";
-}
-
-.extrabold {
-  font-weight: 900;
 }
 
 .lg-0 {
@@ -860,6 +887,20 @@ video {
 }
 
 @media (max-width: 992.98px) {
+  .box-flex-50 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .box-flex-50_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .col-4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -879,6 +920,10 @@ video {
     overflow: hidden;
     /* Выше 768 мы его убираем чтобы сработал 
 position sticky у блока .stickyBlock */
+  }
+
+  .padding-wrap {
+    padding: 32px 16px;
   }
 
   .md3-dn {
@@ -901,6 +946,12 @@ position sticky у блока .stickyBlock */
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+
+  .readyToOrder__body {
+    padding: 32px;
+    border-radius: 32px;
+    gap: 16px;
   }
 
   .popup {
@@ -960,10 +1011,6 @@ position sticky у блока .stickyBlock */
 
   .text-huge {
     font-size: 36px;
-  }
-
-  .text-medium {
-    font-size: 30px;
   }
 }
 

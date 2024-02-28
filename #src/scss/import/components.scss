@@ -7,15 +7,16 @@
 }
 
 .btn{
-	padding: 24px 48px;
+	padding: 16px 48px;
 	border-radius: 99px;
-	font-weight: 700;
+	font-family: "FixelDisplay-SemiBold";
+	line-height: 120%;
 	display: inline-block;
-	background-color: $blue;
-	color: $white;
-	box-shadow: 0px 7px 16px 0px rgba(63, 105, 255, 0.50), 0px 4px 8px 0px rgba(63, 105, 255, 0.30), 0px 2px 4px 0px rgba(63, 105, 255, 0.50);
+	background-color: $white;
+	color: $black;
+	
 	&:hover{
-		background: rgb(63, 105, 255, 0.9);
+		background: rgb(255, 255, 255, 0.9);
 		text-decoration: none;
 	}
 }
@@ -23,11 +24,39 @@
 .btn-2{
 	padding: 16px 48px;
 	border-radius: 99px;
-	background-color: $black;
-	color: $white;
 	font-family: "FixelDisplay-SemiBold";
 	line-height: 120%;
+	background-color: $black;
+	color: $white;
 	&:hover{
 		background: rgb(43, 43, 66, 0.9);
+	}
+}
+
+.padding-wrap{
+	padding: 70px 16px;
+	@media (max-width:#{$md3}px) {
+		padding: 32px 16px;
+	}
+}
+
+.img-maxW-100{
+	max-width: 100%;
+	height: auto;
+}
+
+.box-flex-50{
+	display: flex;
+	gap: 32px;
+	> div{
+		flex: 0 0 50%;
+	}
+	@media (max-width:#{$md2}px) {
+		flex-direction: column-reverse;
+	}
+	&_reverse{
+		@media (max-width:#{$md2}px) {
+			flex-direction: column;
+		}
 	}
 }

@@ -17,6 +17,30 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+.readyToOrder {
+	&__body {
+		color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 64px;
+		border-radius: 64px;
+		gap: 32px;
+		background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
+		@media (max-width:#{$md3}px) {
+			padding: 32px;
+			border-radius: 32px;
+			gap: 16px;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 .popup{
 	position: fixed;
 	top: 0;
