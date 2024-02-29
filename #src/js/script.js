@@ -79,3 +79,30 @@ function animateText(svgID) {
   setInterval(() => animateText('svg2'), 4000);
 
   /////////////////////////////////// КОНЕЦ АНИМАЦИИ SVG-КАРТИНКИ /////////////////////////////////
+
+// Указываем пороговое значение ширины экрана, ниже которого будет происходить перемещение блоков
+const thresholdWidth = 1214;
+
+// Функция для перемещения элементов между блоками в зависимости от размера экрана
+function moveElementsBasedOnScreenWidth() {
+    const container1 = document.getElementById('container1'); // Первый блок, откуда берем элементы
+    const container2 = document.getElementById('container2'); // Второй блок, куда перемещаем элементы
+    const screenWidth = window.innerWidth; // Ширина экрана
+
+    // Если ширина экрана меньше порогового значения, перемещаем элементы из container1 в container2
+    if (screenWidth < thresholdWidth) {
+        const elementsToMove = container1.querySelectorAll('.element-to-move');
+        elementsToMove.forEach(element => {
+            container2.appendChild(element);
+        });
+    } else { // Если ширина экрана больше порогового значения, возвращаем элементы из container2 в container1
+        const elementsToMoveBack = container2.querySelectorAll('.element-to-move');
+        elementsToMoveBack.forEach(element => {
+            container1.appendChild(element);
+        });
+    }
+}
+
+// Вызываем функцию при загрузке страницы и изменении размера окна
+window.addEventListener('load', moveElementsBasedOnScreenWidth);
+window.addEventListener('resize', moveElementsBasedOnScreenWidth);
