@@ -11,13 +11,22 @@
 	border-radius: 99px;
 	font-family: "FixelDisplay-SemiBold";
 	line-height: 120%;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	background-color: $white;
 	color: $black;
-	
 	&:hover{
 		background: rgb(255, 255, 255, 0.9);
 		text-decoration: none;
+	}
+	&_modSvg{
+		padding: 10.5px 48px;
+		svg{
+			width: 36px;
+		}
+		> span{
+			transform: translateY(2px);
+		}
 	}
 }
 
@@ -27,9 +36,16 @@
 	font-family: "FixelDisplay-SemiBold";
 	line-height: 120%;
 	background-color: $black;
+	display: inline-flex;
+	align-items: center;
 	color: $white;
 	&:hover{
 		background: rgb(43, 43, 66, 0.9);
+	}
+	&_mod{
+		> span{
+			transform: translateY(2px);
+		}
 	}
 }
 
@@ -49,7 +65,7 @@
 	display: flex;
 	gap: 32px;
 	> div{
-		flex: 0 0 50%;
+		flex: 1;
 	}
 	@media (max-width:#{$md2}px) {
 		flex-direction: column-reverse;

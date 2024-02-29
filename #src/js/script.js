@@ -36,3 +36,46 @@ function hidePopupR(){
 	document.getElementsByTagName("body")[0].classList.remove("lock");
 	document.getElementById("js-popup-body").classList.remove("hide");
 }
+
+////////////////////////////////////// АНИМАЦИЯ SVG-КАРТИНКИ ////////////////////////////////////
+
+function animateText(svgID) {
+	var textElements = document.querySelectorAll('svg#'+svgID+' text');
+	var letters = ['S', 'E', 'O', 'T', 'E', 'A', 'M', 'L', 'E', 'A', 'D'];
+	var animationCount = 0;
+	var maxAnimations = 15; // Количество анимаций
+
+	function updateText(element, letter) {
+	  element.textContent = letter;
+	}
+
+	function getRandomLetter() {
+		var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		var randomIndex = Math.floor(Math.random() * alphabet.length);
+		return alphabet[randomIndex];
+	}
+
+	function animate() {
+	  animationCount++;
+	  if (animationCount <= maxAnimations) {
+		textElements.forEach(function(element) {
+		  updateText(element, getRandomLetter());
+		});
+	  } else {
+		clearInterval(animationInterval);
+		textElements.forEach(function(element, index) {
+		  updateText(element, letters[index]);
+		});
+	  }
+	}
+
+	var animationInterval = setInterval(animate, 80);
+  }
+
+  animateText('svg1');
+  setInterval(() => animateText('svg1'), 4000);
+
+  animateText('svg2');
+  setInterval(() => animateText('svg2'), 4000);
+
+  /////////////////////////////////// КОНЕЦ АНИМАЦИИ SVG-КАРТИНКИ /////////////////////////////////

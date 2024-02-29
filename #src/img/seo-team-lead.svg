@@ -1,0 +1,22 @@
+<svg id="@@id" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+    <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
+    <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
+    <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text id="text3" x="30" y="15.5" font-size="10" fill="white" text-anchor="middle">O</text>
+    <text id="text4" x="10" y="27.5" font-size="10" fill="white" text-anchor="middle">T</text>
+    <text x="20" y="27.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text x="30" y="27.5" font-size="10" fill="white" text-anchor="middle">A</text>
+    <text x="41.5" y="27.5" font-size="10" fill="white" text-anchor="middle">M</text>
+    <text x="10" y="39.5" font-size="10" fill="white" text-anchor="middle">L</text>
+    <text x="20" y="39.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text x="30" y="39.5" font-size="10" fill="white" text-anchor="middle">A</text>
+    <text x="41.5" y="39.5" font-size="10" fill="white" text-anchor="middle">D</text>
+    <g clip-path="url(#clip0_10538_2743)">
+        <rect x="38" y="8.5" width="7.51" height="7.51" fill="white"/>
+    </g>
+    <defs>
+        <clipPath id="clip0_10538_2743">
+            <rect width="37.12" height="32" fill="white" transform="translate(8.5 8)"/>
+        </clipPath>
+    </defs>
+</svg>

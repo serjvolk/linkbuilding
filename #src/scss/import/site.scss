@@ -17,7 +17,128 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+.fScreen {
+	padding-top: 16px !important;
+	&__bg{
+		margin-bottom: -64px;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 64px;
+		gap: 32px;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);
+		border: 1px solid #FFFFFF;
+		backdrop-filter: blur(16px);
+		border-radius: 64px;
+		text-align: center;
+		@media (max-width:#{$md3}px) {
+			padding: 32px;
+			border-radius: 32px;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		text-align: left;
+		> * {
+			flex: 1;
+			min-width: 250px;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+			&.fScreen__w-100{
+				width: 100%;
+				max-width: auto;
+			}
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 32px;
+		gap: 64px;
+		background: rgba(43, 43, 66, 0.1);
+		border-radius: 32px;
+		height: 100%;
+	}
+}
 
+///////////////////////////////////////////////////////////////////////////////
+
+.workPlan {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 84px;
+		> * {
+			flex: 1;
+		}
+		@media (max-width:#{$md1}px) {
+			gap: 32px;
+		}
+		@media (max-width:861px) {
+			flex-direction: column;
+		}
+	}
+	&__col {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		&_2{
+			align-self: center;
+		}
+		&_3{
+			@media (min-width:861px) {
+				padding-top: 100px;
+			}
+		}
+	}
+	&__card {
+		padding: 32px;
+		box-shadow: 0px 2.2px 1.6px rgba(15, 15, 15, 0.02), 0px 5px 3px rgba(15, 15, 15, 0.03), 0px 10px 7px rgba(15, 15, 15, 0.04), 0px 17px 13px rgba(15, 15, 15, 0.05), 0px 33px 25px rgba(15, 15, 15, 0.06), 0px 80px 60px rgba(15, 15, 15, 0.08);
+		border-radius: 32px;
+		ol{
+			margin-left: 16px;
+			li{
+				padding-left: 2px;
+			}
+		}
+		&_black {
+			background: $black;
+			color: $white;
+		}
+		&_white {
+			background: $white;
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+.details {
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 64px;
+		gap: 32px;
+		isolation: isolate;
+		background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
+		border-radius: 64px;
+	}
+	svg{
+		//margin: -60px -60px 0 -20px;
+		box-shadow: 0px 4px 32px rgba(43, 43, 66, 0.5);
+		transform: rotate(-15deg);
+	}
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -141,7 +262,7 @@
 	}
 	&__viber{
 		background: $black;
-		border-radius: 28px;
+		border-radius: 99px;
 		width: 100px;
 		height: 100px;
 		padding: 18px;
@@ -152,7 +273,6 @@
 		@media (max-width:#{$md3}px) {
 		    width: 64px;
 		    height: 64px;
-		    border-radius: 16px;
 		}
 	}
 	&__email{
