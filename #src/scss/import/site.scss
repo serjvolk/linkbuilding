@@ -162,6 +162,118 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
+.cost{
+	&__title{
+		margin-bottom: 5px;
+	}
+	&__row{
+		margin-top: 16px;
+		display: flex;
+		gap: 32px;
+		> * {
+			flex: 1;
+		}
+		@media (max-width:#{$md3}px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.receipt {
+	width: 360px;
+	height: 360px;
+	background-color: $white;
+	margin: 0 auto;
+	padding: 32px;
+	position: relative;
+	box-shadow: 0px 2.2px 1.6px rgba(15, 15, 15, 0.02), 0px 5px 3px rgba(15, 15, 15, 0.03), 0px 10px 7px rgba(15, 15, 15, 0.04), 0px 17px 13px rgba(15, 15, 15, 0.05), 0px 33px 25px rgba(15, 15, 15, 0.06), 0px 80px 60px rgba(15, 15, 15, 0.08);
+	@media (max-width:408px) {
+		width: 100%;
+	}
+	&:before, &:after{
+		content: "";
+		position: absolute;
+		width: 424px;
+		height: 1px;
+		left: calc(50% - 424px/2);
+		@media (max-width:444px) {
+			width: calc(100% + 32px);
+			left: -16px;
+		}
+	}
+	&:before{
+		top: 0px;
+		background: linear-gradient(270deg, rgba(43, 43, 66, 0) 0%, rgba(43, 43, 66, 0.5) 50.5%, rgba(43, 43, 66, 0) 100%);
+		filter: drop-shadow(0px 18px 18px rgba(0, 0, 0, 0.25)) drop-shadow(0px 7.52px 7.52px rgba(0, 0, 0, 0.179714)) drop-shadow(0px 4.021px 4.02px rgba(0, 0, 0, 0.149027)) drop-shadow(0px 2.254px 2.254px rgba(0, 0, 0, 0.125)) drop-shadow(0px 1.197px 1.198px rgba(0, 0, 0, 0.100973)) drop-shadow(0px 0.498px 0.498px rgba(0, 0, 0, 0.0702864));
+	}
+	&:after{
+		top: -1px;
+		background: #DBDBDF;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		font-size: 14px;
+		line-height: 16.8px;
+		font-family: "IBM Plex Mono", monospace;
+  		font-weight: 400;
+		&_bold{
+			font-weight: 600;
+			color: rgba(43, 43, 66, 1) !important;
+		}
+	}
+	&__title{
+		color: rgba(43, 43, 66, 0.5);
+	}
+	&__price {
+		white-space: nowrap;
+		margin-left: 16px;
+	}
+	&__hr{
+		@media (max-width:408px) {
+			width: 100%;
+		}
+	}
+	&__img{
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.itemCost {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 32px;
+	gap: 8px;
+	border-radius: 16px;
+	background-color: $white;
+	line-height: 14px;
+	white-space: nowrap;
+	cursor: pointer;
+	&__title {
+		font-family: "FixelDisplay-SemiBold";
+	}
+	&__text {
+		color: rgba(43, 43, 66, 0.5);
+	}
+	&_active {
+		background-color: $black;
+		.itemCost__title{
+			color: $white;
+		}
+		.itemCost__text{
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 .ourServices {
 	&__row {
 		display: flex;
@@ -285,6 +397,31 @@
 	}
 	&_blue{
 		background-color: $blue;
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+.otherLinks {
+	&__header{
+		padding-bottom: 19px !important;
+	}
+	&__footer {
+		padding-top: 26px !important;
+	}
+	&__text{
+		max-width: 624px;
+	}
+	&__marquee{
+		padding: 16px;
+		overflow: hidden;
+		span{
+			padding: 16px 32px;
+			background: $black;
+			margin: 0 8px;
+			border-radius: 16px;
+			color: $white;
+		}
 	}
 }
 

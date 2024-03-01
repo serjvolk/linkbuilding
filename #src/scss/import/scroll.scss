@@ -1,0 +1,93 @@
+.scrollBlock{
+	padding-top: 72px;
+	&__body{
+		background-color: $white;
+	}
+}
+
+.scroll {
+	position: relative;
+	padding: 0px 0px 1px 0px;
+	overflow-y: hidden;
+	margin: 0 -16px;
+	::-webkit-scrollbar {
+	    width: 0px;
+	    background: transparent;
+	}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+	&__body {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		@media (max-width:#{$md3}px) {
+		    width: auto;
+			//margin: 0 16px 0 0;
+		}
+	}
+	&__scroll {
+		display: inline-flex;
+		@media (max-width:#{$md3}px) {
+			//padding: 0 8px;
+		}
+	}
+	&__item {
+		margin: 0 16px;
+		@media (max-width:#{$md3}px) {
+			margin: 0 8px;
+			&:first-child{margin-left: 16px !important;}
+			&:last-child{margin-right: 16px !important;}
+		}
+		//border-radius: 12px;
+		padding-top: 16px;
+		//&:first-child{margin-left: 0 !important;}
+		//&:last-child{margin-right: 0 !important;}
+	}
+	&__button{
+		position: absolute;
+		top: calc(50% - 22px);
+		padding: 8px;
+		border-radius: 99px;
+		display: none;
+		left: 16px;
+		z-index: 10;
+		opacity: 0.7;
+		border: 2px solid #F0F1F5;
+		box-shadow: 0px 0px 8px rgba(14, 21, 33, 0.15);
+		&:hover{
+			opacity: 1;
+		}
+		&.btn-prev{}
+		&.btn-next{
+			transform: rotate(180deg);
+			left: auto;
+			right: 16px;
+		}
+		&.open{
+			display: flex;
+		}
+	}
+	&__overlayArea{
+		position: absolute;
+		z-index: 5;
+		top: 16px;
+		bottom: 16px;
+		left: 0px;
+		width: 50px;
+		pointer-events: none;
+		background: linear-gradient(270deg, rgba(255,255,255,0),rgba(240, 241, 245,1));
+		opacity: 0;
+		transition: all 0.3s ease 0s;
+		&_right{
+			left: auto;
+			right: 0px;
+			background: linear-gradient(90deg, rgba(255,255,255,0),rgba(240, 241, 245,1));
+		}
+		&.open{
+			opacity: 1;
+			transition: all 0.3s ease 0s;
+		}
+		@media (max-width:#{$md3}px) {
+			bottom: 0;
+		}
+	}
+}

@@ -22,7 +22,7 @@ $orange: #FF6A00;
 $green: #34C759;
 $red: #FF3288;
 $violet: #CC30FF;
-$darkGray: #8C8D9B;
+$darkGray: #8c8d9b;
 $lightGray: #F0F1F5;
 
 // --------------------------------------------------------
@@ -57,5 +57,7 @@ $lightGray: #F0F1F5;
 @import "import/site"; // Последовательная верстка всего сайта
 @import "import/text"; // Для текста
 @import "import/test"; // Для теста
+@import "import/scroll"; // Для теста
+@import "import/animate"; // Для теста
 
 // --------------------------------------------------------

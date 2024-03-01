@@ -78,4 +78,7 @@ function animateText(svgID) {
   animateText('svg2');
   setInterval(() => animateText('svg2'), 4000);
 
+  animateText('svg3');
+  setInterval(() => animateText('svg3'), 4000);
+
 /////////////////////////////////// КОНЕЦ АНИМАЦИИ SVG-КАРТИНКИ /////////////////////////////////

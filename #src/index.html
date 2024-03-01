@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery.marquee.min.js"></script>
+	<script src="js/jquery-script.js"></script>
+	<title>Linkbuilding</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-	<title>Linkbuilding</title>
-    <meta name="description" content="Linkbuilding description">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+	<meta name="description" content="Linkbuilding description">
 </head>
 <body>
 	<header class="header">
@@ -152,6 +155,86 @@
 		</div>
 	</div>
 
+	<!-- Скільки це коштує? -->
+	<div class="cost container padding-wrap">
+		<p class="text-huge cost__title">Скільки це коштує?</p>
+		<div class="scroll hide-default-scroll">
+			<button class="scroll__button btn-prev">
+				<svg width="24" height="24" viewBox="0 0 24 24">
+					<path d="M20.75 10.7557L9.875 10.7557L9.875 8.25566C9.875 7.75566 9.625 7.38066 9.25 7.13066C8.75 6.88066 8.25 7.00566 7.875 7.25566L2.5 11.0057C2.25 11.2557 2 11.6307 2 12.0057C2 12.3807 2.25 12.7557 2.5 13.0057L7.875 16.7557C8.125 16.8807 8.375 17.0057 8.625 17.0057C8.875 17.0057 9 17.0057 9.25 16.8807C9.625 16.6307 9.875 16.2557 9.875 15.7557L9.875 13.2557L20.75 13.2557C21.5 13.2557 22 12.7557 22 12.0057C22 11.2557 21.5 10.7557 20.75 10.7557Z"/>
+				</svg>
+			</button>
+			<div class="scroll__overlayArea overlayArea-prev"></div>
+			<div class="scroll__overlayArea overlayArea-next scroll__overlayArea_right"></div>
+			<div class="scroll__body">
+				<ul class="scroll__scroll js-itemCost-logic">
+					<li class="scroll__item">
+						<div class="itemCost itemCost_active" data-price-1="1350" data-price-2="650">
+							<p class="itemCost__title">До 200</p>
+							<p class="itemCost__text">посилань</p>
+						</div>
+					</li>
+					<li class="scroll__item">
+						<div class="itemCost" data-price-1="2350" data-price-2="820">
+							<p class="itemCost__title">200-700</p>
+							<p class="itemCost__text">посилань</p>
+						</div>
+					</li>
+					<li class="scroll__item">
+						<div class="itemCost" data-price-1="4500" data-price-2="1800">
+							<p class="itemCost__title">700-2 тис.</p>
+							<p class="itemCost__text">посилань</p>
+						</div>
+					</li>
+					<li class="scroll__item">
+						<div class="itemCost" data-price-1="5950" data-price-2="1920">
+							<p class="itemCost__title">2-10 тис.</p>
+							<p class="itemCost__text">посилань</p>
+						</div>
+					</li>
+					<li class="scroll__item">
+						<div class="itemCost" data-price-1="12600" data-price-2="4250">
+							<p class="itemCost__title">10-20 тис.</p>
+							<p class="itemCost__text">посилань</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<button class="scroll__button btn-next">
+				<svg width="24" height="24" viewBox="0 0 24 24">
+					<path d="M20.75 10.7557L9.875 10.7557L9.875 8.25566C9.875 7.75566 9.625 7.38066 9.25 7.13066C8.75 6.88066 8.25 7.00566 7.875 7.25566L2.5 11.0057C2.25 11.2557 2 11.6307 2 12.0057C2 12.3807 2.25 12.7557 2.5 13.0057L7.875 16.7557C8.125 16.8807 8.375 17.0057 8.625 17.0057C8.875 17.0057 9 17.0057 9.25 16.8807C9.625 16.6307 9.875 16.2557 9.875 15.7557L9.875 13.2557L20.75 13.2557C21.5 13.2557 22 12.7557 22 12.0057C22 11.2557 21.5 10.7557 20.75 10.7557Z"/>
+				</svg>
+			</button>
+		</div>
+		<div class="cost__row">
+			<div class="cost__receipt">
+				<div class="receipt nlc-mb-16 js-receipt js-receipt-anim">
+					<p class="text-medium"><span class="js-price-title">До 200</span> посилань</p>
+					<img class="receipt__hr" src="img/hr.svg" alt="">
+					<div class="receipt__row">
+						<p class="receipt__title">Бюджет на інші посилання, які ми контролюємо в рамках послуги</p>
+						<p class="receipt__price js-price-result-1">1 350$</p>
+					</div>
+					<div class="receipt__row">
+						<p class="receipt__title">Бюджет на наші послуги</p>
+						<p class="receipt__price js-price-result-2">650$</p>
+					</div>
+					<img class="receipt__hr" src="img/hr.svg" alt="">
+					<div class="receipt__row receipt__row_bold">
+						<p>Рекомендований бюджет</p>
+						<p class="receipt__price js-price-result-total">2 000$</p>
+					</div>
+					<img class="receipt__img" src="img/receipt_b.svg" alt="">
+				</div>
+			</div>
+			<div class="cost__text">
+				<p>Порахуйте, скільки лінків у вас в профілі, які повинні працювати — далі мінімальний бюджет, щоб послуга Віддалений Linkbuilding TeamLead  була активована, це бюджет на наші послуги. Всі ці гроші будуть витрачені на нові посилання на ваш проект, або їх посилення.</p>
+				<p class="text-medium mt-32 mb-8">Важливо</p>
+				<p>Після першого місяця, кількість працюючих посилань обов'язково стане менше, оскільки буде частина лінків, які видалили, і скоріш за все будуть лінки, що потраплять у файл disavow. В наступному місяці вони не будуть враховуватися. Кількість лінків не включає нові посилання, що з'являться протягом місяця (коли ми працюємо), в тому числі сміття в GSC. Але відповідно збільшиться на нові проставлені лінки.</p>
+			</div>
+		</div>
+	</div>
+
 	<!-- Наші послуги -->
 	<div class="ourServices container padding-wrap">
 		<p class="text-huge mb-32">Наші послуги, які включені у бюджет</p>
@@ -195,6 +278,35 @@
 			<div class="ourServices__card ourServices__card_black">
 				<div class="label label_blue"><img src="img/element-2.svg" alt=""></div>
 				<p class="text-medium">Ручна очистка профілю або простановка по 25$/год</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Інші посилання -->
+	<div class="otherLinks">
+		<div class="otherLinks__header container padding-wrap">
+			<p class="text-huge">Інші посилання, які ми контролюємо в рамках послуги</p>
+		</div>
+		<div>
+			<div class="otherLinks__marquee js-marquee">
+				<span>Outreach</span>
+				<span>Пироги</span>
+				<span>Дорогі дропи</span>
+				<span>Crowd та інші UGC посилання</span>
+				<span>Guest-posting і копійчані посилання</span>
+				<span>Маркети PBN</span>
+				<span>Outreach</span>
+				<span>Пироги</span>
+				<span>Дорогі дропи</span>
+				<span>Crowd та інші UGC посилання</span>
+				<span>Guest-posting і копійчані посилання</span>
+				<span>Маркети PBN</span>
+			</div>
+		</div>
+		<div class="otherLinks__footer container padding-wrap">
+			<div class="otherLinks__text nlc-mb-16">
+				<p>Ми можемо порекомендувати кілька підрядників у кожному напрямку, або ці роботи можуть закрити ваші linkbuilder'и.</p>
+				<p>Допоможемо сформувати правильну стратегію та ТЗ, та перевірити результат роботи на його відповідність.</p>
 			</div>
 		</div>
 	</div>
@@ -269,6 +381,7 @@
 						<div class="f-aic nlc-mr-8">
 							<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 							<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
+							@@include('img/seo-team-lead.svg', {"id": "svg3"})
 						</div>
 						<div class="footer__socials">
 							<a href="https://t.me/WorkingDrops_bot">
