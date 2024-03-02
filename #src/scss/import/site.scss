@@ -62,11 +62,143 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		padding: 32px;
-		gap: 64px;
+		gap: 38px;
 		background: rgba(43, 43, 66, 0.1);
 		border-radius: 32px;
 		height: 100%;
 	}
+}
+
+.subjects{
+	height: 120px;
+	position: relative;
+	&__item{
+		position: absolute;
+		top: 0;
+		left: 0;
+		fill: $black;
+		opacity: 0;
+		transform: translateX(150px);
+		animation: subjects 4s infinite;
+		&_1{
+			height: 89px;
+			width: 134px;
+		}
+		&_2{
+			margin: -17px 0 0 -16px;
+			height: 111px;
+			width: 116px;
+			animation-delay: 1000ms;
+		}
+		&_3{
+			margin: -20px 0 0 -16px;
+			height: 126px;
+			width: 148px;
+			animation-delay: 2000ms;
+		}
+		&_4{
+			margin: -15px 0 0 -16px;
+			height: 115px;
+			width: 115px;
+			animation-delay: 3000ms;
+		}
+	}
+}
+
+@keyframes subjects {
+	0% { 
+		opacity: 0;
+		transform: translateX(150px); 
+	}
+	25%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+	28%{
+		opacity: 0;
+	}
+	100% { 
+		transform: translateX(150px);
+	}
+}
+
+.graph{
+	width: 100%;
+	rect{
+		height: 0;
+	}
+}
+
+.anim-graph._active{
+	.graph{
+		rect:nth-child(1){ animation: rect1 2s forwards; }
+		rect:nth-child(2){ animation: rect2 2.5s forwards; }
+		rect:nth-child(3){ animation: rect3 1s forwards; }
+		rect:nth-child(4){ animation: rect4 2.5s forwards; }
+		rect:nth-child(5){ animation: rect5 3s forwards; }
+		rect:nth-child(6){ animation: rect6 1.5s forwards; }
+		rect:nth-child(7){ animation: rect7 0.5s forwards; }
+		rect:nth-child(8){ animation: rect8_9 1.5s forwards; }
+		rect:nth-child(9){ animation: rect8_9 2.5s forwards; }
+		rect:nth-child(10){ animation: rect10 2s forwards; }
+		rect:nth-child(11){ animation: rect11 1.5s forwards; }
+		rect:nth-child(12){ animation: rect12 1s forwards; }
+	}
+}
+
+@keyframes rect1 { 
+	0%{ height: 0; y: 89; }
+	100%{ height: 89; y: 0; }
+}
+
+@keyframes rect2 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 22; y: 67.7129; }
+}
+
+@keyframes rect3 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 61; y: 28.7129; }
+}
+
+@keyframes rect4 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 37; y: 52.7129; }
+}
+
+@keyframes rect5 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 78; y: 11.7129; }
+}
+
+@keyframes rect6 { 
+	from{ height: 0; y: 89.712891; }
+	to{ height: 89; y: 0.712891; }
+}
+
+@keyframes rect7 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 68; y: 21.7129; }
+}
+
+@keyframes rect8_9 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 56; y: 33.7129; }
+}
+
+@keyframes rect10 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 61; y: 28.7129; }
+}
+
+@keyframes rect11 { 
+	from{ height: 0; y: 89.712891; }
+	to{ height: 89; y: 0.712891; }
+}
+
+@keyframes rect12 { 
+	from{ height: 0; y: 89.7129; }
+	to{ height: 68; y: 21.7129; }
 }
 
 ///////////////////////////////////////////////////////////////////////////////

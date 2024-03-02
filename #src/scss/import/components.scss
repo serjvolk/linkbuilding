@@ -13,11 +13,20 @@
 	line-height: 120%;
 	display: inline-flex;
 	align-items: center;
-	background-color: $white;
-	color: $black;
-	&:hover{
-		background: rgb(255, 255, 255, 0.9);
-		text-decoration: none;
+	&_black{
+		background-color: $black;
+		color: $white;
+		&:hover{
+			background: rgb(43, 43, 66, 0.9);
+		}
+	}
+	&_white{
+		background-color: $white;
+		color: $black;
+		&:hover{
+			background: rgb(255, 255, 255, 0.9);
+			text-decoration: none;
+		}
 	}
 	&_modSvg{
 		padding: 10.5px 48px;
@@ -28,26 +37,51 @@
 			transform: translateY(2px);
 		}
 	}
-}
-
-.btn-2{
-	padding: 16px 48px;
-	border-radius: 99px;
-	font-family: "FixelDisplay-SemiBold";
-	line-height: 120%;
-	background-color: $black;
-	display: inline-flex;
-	align-items: center;
-	color: $white;
-	&:hover{
-		background: rgb(43, 43, 66, 0.9);
-	}
 	&_mod{
 		> span{
 			transform: translateY(2px);
 		}
 	}
+
+	/* Важные стили для анимации */
+	position: relative;
+	overflow: hidden;
+	&:after {
+		content: "";
+		display: block;
+		width: 20px;
+		height: 300px;
+		margin-left: 50px;
+		background: #fff;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.5) 0%,
+			rgba(255, 255, 255, 1) 50%,
+			rgba(255, 255, 255, 0.5) 100%
+		);
+		left: -40px;
+		top: -150px;
+		z-index: 1;
+		transform: rotate(45deg);
+		position: absolute;
+		animation: movingFlare 3s ease-in-out 0.05s infinite;
+	  }
 }
+
+@keyframes movingFlare {
+	0% {
+	  left: -30px;
+	  margin-left: 0px;
+	}
+	20% {
+	  left: 110%;
+	  margin-left: 80px;
+	}
+	100% {
+	  left: 110%;
+	  margin-left: 80px;
+	}
+  }
 
 .padding-wrap{
 	padding: 70px 16px;

@@ -1,0 +1,4 @@
+img/sprite/subjects-sprite.svg#apple
+img/sprite/subjects-sprite.svg#game
+img/sprite/subjects-sprite.svg#hat
+img/sprite/subjects-sprite.svg#link

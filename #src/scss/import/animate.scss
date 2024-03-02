@@ -16,3 +16,41 @@
 		transform: translateX(0px); 
 	}
 }
+
+.anim-down-up{
+	opacity: 0;
+	transform: translateY(120px); 
+	&._active{
+		animation: downUp 500ms forwards;
+	}
+}
+
+@keyframes downUp {
+	0% { 
+		opacity: 0;
+		transform: translateY(120px); 
+	}
+	100% { 
+		opacity: 1;
+		transform: translateX(0px); 
+	}
+}
+
+.anim-up-down{
+	opacity: 0;
+	transform: translateY(-120px);
+	&._active{
+		animation: upDown 500ms forwards;
+	}
+}
+
+@keyframes upDown {
+	0% { 
+		opacity: 0;
+		transform: translateY(-120px); 
+	}
+	100% { 
+		opacity: 1;
+		transform: translateX(0px); 
+	}
+}

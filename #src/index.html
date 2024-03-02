@@ -22,17 +22,17 @@
 					<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
 					@@include('img/seo-team-lead.svg', {"id": "svg1"})
 				</div>
-				<button class="btn-2 js-show-popup header__btn">Замовити</button>
+				<button class="btn btn_black js-show-popup header__btn">Замовити</button>
 			</div>
 		</div>
 	</header>
 
 	<!-- First screen -->
 	<div class="fScreen container padding-wrap">
-		<div class="fScreen__bg ta-c">
+		<div class="fScreen__bg ta-c"> <!--  _anim-items _anim-no-hide anim-up-down -->
 			<img src="img/fScreen.svg" alt="">
 		</div>
-		<div class="fScreen__body">
+		<div class="fScreen__body"> <!--  _anim-items _anim-no-hide anim-down-up -->
 			<p class="text-huge">Віддалений Linkbuilding TeamLead</p>
 			<p>це послуга по створенню стратегії linkbuilding'а проекту та контроль якості виконання робіт, що допомагає збільшити відсоток працюючих посилань на <span class="bold">20-300%</span> в залежності від рівня команди.</p>
 			<div class="fScreen__row">
@@ -44,18 +44,25 @@
 				</div>
 				<div class="fScreen__col">
 					<div class="fScreen__card">
-						<img loading="lazy" src="img/fScreen_2.png" width="135" height="90" alt="">
+						<!-- <img loading="lazy" src="img/fScreen_2.png" width="135" height="90" alt=""> -->
+						<div class="subjects">
+							<svg class="subjects__item subjects__item_1"><use xlink:href="img/sprite/subjects-sprite.svg#hat"/></svg>
+							<svg class="subjects__item subjects__item_2"><use xlink:href="img/sprite/subjects-sprite.svg#apple"/></svg>
+							<svg class="subjects__item subjects__item_3"><use xlink:href="img/sprite/subjects-sprite.svg#game"/></svg>
+							<svg class="subjects__item subjects__item_4"><use xlink:href="img/sprite/subjects-sprite.svg#link"/></svg>
+						</div>
 						<p>Будь-яка тематика</p>
 					</div>
 				</div>
 				<div class="fScreen__col">
-					<div class="fScreen__card">
-						<img class="fScreen__w-100" loading="lazy" src="img/fScreen_3.svg" width="288" height="90" alt="">
+					<div class="fScreen__card _anim-items _anim-no-hide anim-graph">
+						<!-- <img class="fScreen__w-100" loading="lazy" src="img/fScreen_3.svg" width="288" height="90" alt=""> -->
+						@@include('img/fScreen_3.svg')
 						<p>Ціна залежить від кількості лінків, які потрібно аналізувати і опрацьовувати</p>
 					</div>
 				</div>
 			</div>
-			<button class="btn-2 btn-2_mod js-show-popup">
+			<button class="btn btn_black btn_mod js-show-popup">
 				<img src="img/tg.svg" width="24" alt="">
 				<span class="ml-16">Запитати подробиці</span>
 			</button>
@@ -73,7 +80,6 @@
 			</div>
 			<div class="ta-c">
 				<img loading="lazy" class="img-maxW-100" src="img/solveProblems.png" width="678" height="639" alt="">
-				
 			</div>
 		</div>
 	</div>
@@ -143,11 +149,11 @@
 		<div class="details__body">
 			<p class="text-huge white details__title">Дізнайтесь подробиці про послугу <img loading="lazy" src="img/stl-white.png" width="367" height="349" alt=""> в чат-ботах</p>
 			<div class="details__row">
-				<a href="https://t.me/WorkingDrops_bot" class="btn">
+				<a href="https://t.me/WorkingDrops_bot" class="btn btn_white">
 					<img src="img/tg-black.svg" alt="">
 					<span class="ml-16">Telegram</span>
 				</button>
-				<a href="viber://pa?chatURI=workingdrops" class="btn">
+				<a href="viber://pa?chatURI=workingdrops" class="btn btn_white">
 					<img src="img/viber-black.png" alt="">
 					<span class="ml-16">Telegram</span>
 				</a>
@@ -340,7 +346,7 @@
 	<div class="readyToOrder container padding-wrap">
 		<div class="readyToOrder__body">
 			<p class="text-huge">Готові замовити послугу Віддалений Linkbuilding TeamLead?</p>
-			<button class="btn btn_modSvg js-show-popup">
+			<button class="btn btn_white btn_modSvg js-show-popup">
 				@@include('img/seo-team-lead.svg', {"id": "svg2"})
 				<span class="ml-16">Замовити</span>
 			</button>
