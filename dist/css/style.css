@@ -849,10 +849,6 @@ video {
   width: 100%;
 }
 
-.graph rect {
-  height: 0;
-}
-
 .anim-graph._active .graph rect:nth-child(1) {
   -webkit-animation: rect1 2s forwards;
           animation: rect1 2s forwards;
