@@ -20,7 +20,7 @@
 				<div class="f-aic nlc-mr-8">
 					<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 					<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-					<svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+					<svg id="svg1" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -147,8 +147,8 @@
 					</div>
 				</div>
 			</div>
-			<button class="btn btn_black btn_mod js-show-popup">
-				<img src="img/tg.svg" width="24" alt="">
+			<button class="btn btn_black btn_modTg js-show-popup">
+				<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#telegram"/></svg>
 				<span class="ml-16">Запитати подробиці</span>
 			</button>
 		</div>
@@ -196,9 +196,11 @@
 					<p>Обробимо весь ваш список посилань, що ви розміщували на проект до нас та опрацюємо всі посилання з <img src="img/ahrefs.svg" style="transform: translateY(1px);" alt="">
 						та <span class="bold">GSC</span>. Визначимо ті, що можуть працювати, та список для <span class="bold">disavow</span>.</p>
 				</div>
-				<div class="workPlan__card workPlan__card_white">
+				<div class="workPlan__card workPlan__card_white pos-r">
 					<p>Визначимо посилання, що вже працюють, та які краще підходять для Tier2 прогонів. Для цього вам буде необхідно надати нам
-						<span class="bg-lightGray">списки вивантаження з GSC та звіти по прогонам і простановкам посилань, які маєте в наявності.</span></p>
+						<span class="bg-lightGray hoverTrigger">списки вивантаження з GSC та звіти по прогонам і простановкам посилань, які маєте в наявності.</span>
+						<span class="hoverModal">Це не обов'язкова процедура, але ви самі будете зацікавлені в її результаті. Ми не маємо своїх проектів в Gambling, умови NDA можна обговорити в чаті підтримки. Працювати можна без розкриття певних даних, але якість роботи буде гірша (уявіть, що TeamLead не знає, які роботи робились до нього).</span>
+					</p>
 				</div>
 			</div>
 			<div class="workPlan__col workPlan__col_2">
@@ -235,12 +237,12 @@
 			<p class="text-huge white details__title">Дізнайтесь подробиці про послугу <img loading="lazy" src="img/stl-white.png" width="367" height="349" alt=""> в чат-ботах</p>
 			<div class="details__row">
 				<a href="https://t.me/WorkingDrops_bot" class="btn btn_white">
-					<img src="img/tg-black.svg" alt="">
+					<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#telegram"/></svg>
 					<span class="ml-16">Telegram</span>
 				</button>
 				<a href="viber://pa?chatURI=workingdrops" class="btn btn_white">
-					<img src="img/viber-black.png" alt="">
-					<span class="ml-16">Telegram</span>
+					<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#viber"/></svg>
+					<span class="ml-16">Viber</span>
 				</a>
 			</div>
 		</div>
@@ -330,29 +332,29 @@
 	<div class="ourServices container padding-wrap">
 		<p class="text-huge mb-32">Наші послуги, які включені у бюджет</p>
 		<div class="ourServices__row">
-			<a href="https://pbn-b2.workingdrops.com/ru" class="ourServices__card ourServices__card_blue ourServices__card_1">
+			<a href="https://pbn-b2.workingdrops.com/ru" target="_blank" class="ourServices__card ourServices__card_blue ourServices__card_1">
 				<span class="label label_gradient">PBN-B2</span>
 				<span class="text-medium">Тематичні посилання зі сторінок з PageRank2</span>
-				<img src="img/arrow.svg" alt="">
+				<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#arrow"/></svg>
 			</a>
-			<a href="https://links-s100.workingdrops.com" class="ourServices__card ourServices__card_black ourServices__card_3">
+			<a href="https://links-s100.workingdrops.com" target="_blank" class="ourServices__card ourServices__card_black ourServices__card_3">
 				<span class="label label_blue">links-S100</span>
 				<span class="text-medium">DOfollow Submits-посилання з DR50+</span>
-				<img src="img/arrow.svg" alt="">
+				<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#arrow"/></svg>
 			</a>
 			<div class="ourServices__card ourServices__card_white">
 				<div class="label label_black"><img src="img/element-1.svg" alt=""></div>
 				<p class="text-medium">Збір донорів під фільтри для лінкбілдерів</p>
 			</div>
-			<a href="https://pbn-b21.workingdrops.com" class="ourServices__card ourServices__card_white">
+			<a href="https://pbn-b21.workingdrops.com" target="_blank" class="ourServices__card ourServices__card_white">
 				<span class="label label_black">PBN-B21</span>
 				<span class="text-medium">Посилання з головних у складчину</span>
-				<img src="img/arrow-black.svg" alt="">
+				<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#arrow"/></svg>
 			</a>
-			<a href="https://drops-f5.workingdrops.com" class="ourServices__card ourServices__card_white">
+			<a href="https://drops-f5.workingdrops.com" target="_blank" class="ourServices__card ourServices__card_white">
 				<span class="label label_black">drops-f5</span>
 				<span class="text-medium">5 дропів за 350$ під 301 редірект</span>
-				<img src="img/arrow-black.svg" alt="">
+				<svg class="w-24"><use xlink:href="img/sprite/icons-sprite.svg#arrow"/></svg>
 			</a>
 			<div class="ourServices__card ourServices__card_blue">
 				<div class="label label_black">Tier 2/3</div>
@@ -361,7 +363,6 @@
 			<div class="ourServices__card ourServices__card_black">
 				<div class="label label_blue">PBN-B2 <span class="text-default">MIX</span></div>
 				<p class="text-medium">Тематичні посилання, як для себе, з DR15+</p>
-				<img src="img/arrow-black.svg" alt="">
 			</div>
 			<div class="ourServices__card ourServices__card_fake">
 				
@@ -432,7 +433,7 @@
 		<div class="readyToOrder__body">
 			<p class="text-huge">Готові замовити послугу Віддалений Linkbuilding TeamLead?</p>
 			<button class="btn btn_white btn_modSvg js-show-popup">
-				<svg id="svg2" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+				<svg id="svg2" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -468,17 +469,19 @@
 			<p>Людяна служба підтримки у зручних для вас месенджерах</p>
 			<div class="socialsList">
 				<div class="socialsList__col">
-					<a href="https://t.me/WorkingDrops_bot" class="socials">
-						<img loading="lazy" class="socials__telegram" src="img/telegram.svg" alt="">
-						<span class="socials__text">Telegram</span>
+					<a href="https://t.me/WorkingDrops_bot" class="socialCard">
+						<span class="social social_telegram">
+							<svg><use xlink:href="img/sprite/icons-sprite.svg#telegram"/></svg>
+						</span>
+						<span class="socialCard__text">Telegram</span>
 					</a>
 				</div>
 				<div class="socialsList__col">
-					<a href="viber://pa?chatURI=workingdrops" class="socials">
-						<span class="socials__viber">
-							<img loading="lazy" src="img/viber.png" alt="">
+					<a href="viber://pa?chatURI=workingdrops" class="socialCard">
+						<span class="social social_viber">
+							<svg><use xlink:href="img/sprite/icons-sprite.svg#viber"/></svg>
 						</span>
-						<span class="socials__text">Viber</span>
+						<span class="socialCard__text">Viber</span>
 					</a>
 				</div>
 			</div>
@@ -493,7 +496,7 @@
 						<div class="f-aic nlc-mr-8">
 							<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 							<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-							<svg id="svg3" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+							<svg id="svg3" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -517,13 +520,11 @@
 </svg>
 						</div>
 						<div class="footer__socials">
-							<a href="https://t.me/WorkingDrops_bot">
-								<img loading="lazy" class="socials__telegram" src="img/telegram.svg" alt="">
+							<a href="https://t.me/WorkingDrops_bot" class="social social_telegram mr-32">
+								<svg><use xlink:href="img/sprite/icons-sprite.svg#telegram"/></svg>
 							</a>
-							<a href="viber://pa?chatURI=workingdrops">
-								<span class="socials__viber">
-									<img loading="lazy" src="img/viber.png" width="24" height="24" alt="">
-								</span>
+							<a href="viber://pa?chatURI=workingdrops" class="social social_viber">
+								<svg><use xlink:href="img/sprite/icons-sprite.svg#viber"/></svg>
 							</a>
 						</div>
 					</div>

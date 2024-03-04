@@ -15,6 +15,10 @@
 	}
 }
 
+.logoSvg{
+	font-family: "FixelDisplay-Medium";
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 .fScreen {
@@ -248,6 +252,48 @@
 	}
 }
 
+.hoverTrigger{
+	&:hover + .hoverModal{
+		transition: opacity 0.15s;
+		opacity: 1;
+	}
+}
+
+.hoverModal{
+	position: absolute;
+	top: 25%;
+	right: -520px;
+	padding: 32px;
+	width: 500px;
+	background: $white;
+	box-shadow: 0px 2.2px 1.6px rgba(15, 15, 15, 0.02), 0px 5px 3px rgba(15, 15, 15, 0.03), 0px 10px 7px rgba(15, 15, 15, 0.04), 0px 17px 13px rgba(15, 15, 15, 0.05), 0px 33px 25px rgba(15, 15, 15, 0.06), 0px 80px 60px rgba(15, 15, 15, 0.08);
+	border-radius: 32px;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.15s ease 0.3s;
+	&:after{
+		content: "";
+		top: calc(50% - 80px);
+		left: -18px;
+		position: absolute;
+		width: 20px;
+		height: 160px;
+		background: url("data:image/svg+xml,%3Csvg width='20' height='160' viewBox='0 0 20 160' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0C20 40 11 66 0 80H20L20 0ZM20 160C20 120 11 94 0 80H20L20 160Z' fill='white'/%3E%3C/svg%3E");
+	}
+	@media (max-width:862px) {
+		right: 0;
+		top: auto;
+		transform: translateY(100%);
+		width: 100%;
+		bottom: -20px;
+		&:after{
+			transform: rotate(90deg);
+			top: -87px;
+			left:100px;
+		}
+	}
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 .details {
@@ -455,11 +501,6 @@
 				}
 			}
 		}
-		@media (max-width:423px){
-			.label{
-				border-radius: 0 16px 16px 0;
-			}
-		}
 	}
 	&__card {
 		position: relative;
@@ -472,16 +513,32 @@
 		height: 240px;
 		box-shadow: 0px 2.2px 1.6px rgba(15, 15, 15, 0.02), 0px 5px 3px rgba(15, 15, 15, 0.03), 0px 10px 7px rgba(15, 15, 15, 0.04), 0px 17px 13px rgba(15, 15, 15, 0.05), 0px 33px 25px rgba(15, 15, 15, 0.06), 0px 80px 60px rgba(15, 15, 15, 0.08);
 		border-radius: 32px;
+		@media (min-width:1191px) {
+			transition: transform 0.15s;
+				&:hover{
+					transition: transform 0.15s;
+					transform: translateY(-16px);
+					&:nth-child(1){ transform: translateY(59px); }
+					&:nth-child(4){ transform: translateY(59px); }
+					&:nth-child(7){ transform: translateY(59px); }
+					&:nth-child(2){ transform: translateY(124px); }
+					&:nth-child(5){ transform: translateY(124px); }
+					&:nth-child(8){ transform: translateY(124px); }
+				}
+		}
 		&_blue {
 			background: $blue;
 			color: $white;
+			svg{ fill: $white; }
 		}
 		&_white {
 			background-color: $white;
+			svg{ fill: $black; }
 		}
 		&_black{
 			background-color: $black;
 			color: $white;
+			svg{ fill: $white; }
 		}
 		&_fake{
 			box-shadow: none;
@@ -518,6 +575,15 @@
 	padding: 0px 8px;
 	color: $white;
 	font-family: "FixelDisplay-SemiBold";
+	@media (max-width:#{$md4}px) {
+		left: -12px;
+	}
+	@media (min-width:1190px) and (max-width:1330px){
+		left: -12px;
+	}
+	@media (min-width:799px) and (max-width:870px){
+		left: -12px;
+	}
 	&_gradient{
 		background: linear-gradient(74.3deg, #4CE49B 4.17%, #4EB5FF 27.08%, #933FFF 49.98%, #F20056 72.88%, #FFDA44 95.78%);
 	}
@@ -648,63 +714,61 @@
 	}
 }
 
-.socials{
-	background-color: $lightGray;
-	border-radius: 24px;
-	padding: 24px;
+.socialCard{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: $lightGray;
+	border-radius: 24px;
+	padding: 24px;
 	@media (max-width:#{$md3}px) {
-		padding: 24px;
 		border-radius: 16px;
 	}
 	&:hover{
 		text-decoration: none;
 		background: rgba(136, 136, 158, 0.15);
 	}
+	.social{
+		width: 100px;
+		height: 100px;
+		padding: 20px;
+		&_telegram svg{
+			transform: translateX(-4px) scale(0.9);
+		}
+		&:hover{
+			background-color: $black;
+		}
+		@media (max-width:#{$md4}px) {
+			width: 64px;
+			height: 64px;
+			padding: 12px;
+		}
+	}
 	&__text{
 		margin-top: 16px;
 	}
-	&__telegram{
-		width: 100px;
-		height: 100px;
-		@media (max-width:#{$md3}px) {
-		    width: 64px;
-		    height: 64px;
-		}
+}
+
+.social{
+	background: $black;
+	border-radius: 99px;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	padding: 12px;
+	fill: $white;
+	svg{
+		width: 100%;
+		height: 100%;
 	}
-	&__viber{
-		background: $black;
-		border-radius: 99px;
-		width: 100px;
-		height: 100px;
-		padding: 18px;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-		@media (max-width:#{$md3}px) {
-		    width: 64px;
-		    height: 64px;
-		}
+	&:hover{
+		text-decoration: none;
+		background: rgba(43, 43, 66, 0.85);
 	}
-	&__email{
-		background: #2B2B42;
-		border-radius: 28px;
-		width: 100px;
-		height: 100px;
-		padding: 18px;
-		img{
-			width: 100%;
-			height: 100%;
-		}
-		@media (max-width:#{$md3}px) {
-		    width: 64px;
-		    height: 64px;
-		    border-radius: 16px;
-		}
+	&_telegram svg{
+		transform: translateX(-2px);
 	}
+	&_viber{}
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -737,20 +801,6 @@
 	}
 	&__socials{
 		display: flex;
-		.socials{
-			&__telegram{
-				width: 48px;
-				height: 48px;
-				margin-right: 32px;
-			}
-			&__viber{
-				display: inline-block;
-				width: 48px;
-				height: 48px;
-				padding: 12px;
-				border-radius: 99px;
-			}
-		}
 	}
 }
 

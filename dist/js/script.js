@@ -45,43 +45,64 @@ function animateText(svgID) {
 	var textElements = document.querySelectorAll('svg#'+svgID+' text');
 	var letters = ['S', 'E', 'O', 'T', 'E', 'A', 'M', 'L', 'E', 'A', 'D'];
 	var animationCount = 0;
-	var maxAnimations = 15; // Количество анимаций
+	const MAX_ANIMATIONS = 4; // Количество анимаций
+	let lastIndex = 0;
+	let textUpdatedInLoop = false;
 
 	function updateText(element, letter) {
 	  element.textContent = letter;
 	}
 
+	// Получить случайную букву
 	function getRandomLetter() {
-		var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		var randomIndex = Math.floor(Math.random() * alphabet.length);
+		let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		let randomIndex = Math.floor(Math.random() * alphabet.length);
 		return alphabet[randomIndex];
 	}
 
 	function animate() {
-	  animationCount++;
-	  if (animationCount <= maxAnimations) {
-		textElements.forEach(function(element) {
-		  updateText(element, getRandomLetter());
-		});
-	  } else {
-		clearInterval(animationInterval);
+		animationCount++;
+		textUpdatedInLoop = false;
 		textElements.forEach(function(element, index) {
-		  updateText(element, letters[index]);
+			if(index >= lastIndex){
+				if(animationCount % MAX_ANIMATIONS === 0 && textUpdatedInLoop === false){
+					updateText(element, letters[index]);
+					lastIndex++;
+					textUpdatedInLoop = true;
+				}else{
+					updateText(element, getRandomLetter());
+				}
+			}
+			if(lastIndex > letters.length-1){
+				clearInterval(animationInterval);
+			}
 		});
-	  }
 	}
 
 	var animationInterval = setInterval(animate, 80);
-  }
+}
 
-  animateText('svg1');
-  setInterval(() => animateText('svg1'), 4000);
+//animateText('svg1');
+//setInterval(() => animateText('svg1'), 6000);
 
-  animateText('svg2');
-  setInterval(() => animateText('svg2'), 4000);
+//animateText('svg2');
+//setInterval(() => animateText('svg2'), 6000);
 
-  animateText('svg3');
-  setInterval(() => animateText('svg3'), 4000);
+//animateText('svg3');
+//setInterval(() => animateText('svg3'), 6000);
+
+let allSvgTexts = [];
+const svgElements = document.querySelectorAll('.logoSvg');
+svgElements.forEach((svgElement, indexSvg) => {
+    const textElements = svgElement.getElementsByTagName('text');
+    allSvgTexts[indexSvg] = [];
+    for (let indexText = 0; indexText < textElements.length; indexText++) {
+        allSvgTexts[indexSvg][indexText] = textElements[indexText];
+    }
+});
+
+allSvgTexts[0][2].textContent = "4";
+allSvgTexts[1][4].textContent = "7";
 
 ////////////////////////////// ///// АНИМBАТЬ ЭЛЕМЕНТЫ /////// //////////////////////////
 

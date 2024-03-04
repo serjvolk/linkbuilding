@@ -1,3 +1,6 @@
+img/sprite/icons-sprite.svg#arrow
+img/sprite/icons-sprite.svg#telegram
+img/sprite/icons-sprite.svg#viber
 img/sprite/subjects-sprite.svg#apple
 img/sprite/subjects-sprite.svg#game
 img/sprite/subjects-sprite.svg#hat
