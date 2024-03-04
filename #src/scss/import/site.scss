@@ -104,48 +104,53 @@
 		left: 0;
 		fill: $black;
 		opacity: 0;
-		transform: translateX(150px);
-		animation: subjects 4s infinite;
+		height: 89px;
 		&_1{
-			height: 89px;
-			width: 134px;
+			width: 134.5px;
+			animation: subjects 5s infinite;
 		}
 		&_2{
-			margin: -17px 0 0 -16px;
-			height: 111px;
-			width: 116px;
-			animation-delay: 1000ms;
+			width: 94px;
+			transform: translateX(120px);
+			animation-delay: 500ms;
+			animation: subjects2 5s infinite;
 		}
 		&_3{
-			margin: -20px 0 0 -16px;
-			height: 126px;
-			width: 148px;
-			animation-delay: 2000ms;
+			width: 80px;
+			transform: translateX(240px);
+			animation-delay: 1000ms;
+			animation: subjects2 5s infinite 0.5s;
 		}
 		&_4{
-			margin: -15px 0 0 -16px;
-			height: 115px;
-			width: 115px;
-			animation-delay: 3000ms;
+			width: 89px;
+			transform: translateY(100px);
+			animation: subjects2 5s infinite 1s;
+		}
+		&_5{
+			width: 55.5px;
+			transform: translate(120px, 100px);
+			animation: subjects2 5s infinite 1.5s;
+		}
+		&_6{
+			width: 129.5px;
+			transform: translate(240px, 100px);
+			animation: subjects2 5s infinite 2s;
 		}
 	}
 }
 
 @keyframes subjects {
-	0% { 
-		opacity: 0;
-		transform: translateX(150px); 
-	}
-	25%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-	28%{
-		opacity: 0;
-	}
-	100% { 
-		transform: translateX(150px);
-	}
+	0%{opacity: 0;}
+	59%{opacity: 0;}
+	60%{opacity: 1;}
+	100%{opacity: 1;}
+}
+
+@keyframes subjects2 {
+	0%{opacity: 1;}
+	10%{opacity: 1;}
+	11%{opacity: 0;}
+	100%{opacity: 0;}
 }
 
 .graph{
