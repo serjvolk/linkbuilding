@@ -103,54 +103,47 @@
 		top: 0;
 		left: 0;
 		fill: $black;
-		opacity: 0;
+		visibility: hidden;
 		height: 89px;
+		animation: subjects-other 5s infinite;
 		&_1{
 			width: 134.5px;
-			animation: subjects 5s infinite;
+			animation: subjects-first 5s infinite;
 		}
 		&_2{
 			width: 94px;
-			transform: translateX(120px);
-			animation-delay: 500ms;
-			animation: subjects2 5s infinite;
 		}
 		&_3{
 			width: 80px;
-			transform: translateX(240px);
-			animation-delay: 1000ms;
-			animation: subjects2 5s infinite 0.5s;
+			animation-delay: 0.35s;
 		}
 		&_4{
 			width: 89px;
-			transform: translateY(100px);
-			animation: subjects2 5s infinite 1s;
+			animation-delay: 0.7s;
 		}
 		&_5{
 			width: 55.5px;
-			transform: translate(120px, 100px);
-			animation: subjects2 5s infinite 1.5s;
+			animation-delay: 1.05s;
 		}
 		&_6{
 			width: 129.5px;
-			transform: translate(240px, 100px);
-			animation: subjects2 5s infinite 2s;
+			animation-delay: 1.4s;
 		}
 	}
 }
 
-@keyframes subjects {
-	0%{opacity: 0;}
-	59%{opacity: 0;}
-	60%{opacity: 1;}
-	100%{opacity: 1;}
+@keyframes subjects-first {
+	0%{visibility: hidden;}
+	35%{visibility: hidden;}
+	36%{visibility: visible;}
+	100%{visibility: visible;}
 }
 
-@keyframes subjects2 {
-	0%{opacity: 1;}
-	10%{opacity: 1;}
-	11%{opacity: 0;}
-	100%{opacity: 0;}
+@keyframes subjects-other {
+	0%{visibility: visible;}
+	6%{opacity: visible;}
+	7%{visibility: hidden;}
+	100%{visibility: hidden;}
 }
 
 .graph{
