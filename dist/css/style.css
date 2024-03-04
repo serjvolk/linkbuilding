@@ -771,16 +771,7 @@ video {
 }
 
 .fScreenCard .logoSvg text {
-  fill: #2B2B42;
   font-family: "FixelDisplay-Bold";
-}
-
-.fScreenCard .logoSvg g rect {
-  fill: #2B2B42;
-}
-
-.fScreenCard .logoSvg rect {
-  fill: #FFFFFF;
 }
 
 .subjects {
