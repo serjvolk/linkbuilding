@@ -153,14 +153,14 @@
 .anim-graph._active{
 	.graph{
 		rect:nth-child(1){ animation: rect1 2s forwards; }
-		rect:nth-child(2){ animation: rect2 2.5s forwards; }
+		rect:nth-child(2){ animation: rect2 2.4s forwards; }
 		rect:nth-child(3){ animation: rect3 1s forwards; }
-		rect:nth-child(4){ animation: rect4 2.5s forwards; }
-		rect:nth-child(5){ animation: rect5 3s forwards; }
+		rect:nth-child(4){ animation: rect4 2.4s forwards; }
+		rect:nth-child(5){ animation: rect5 2s forwards; }
 		rect:nth-child(6){ animation: rect6 1.5s forwards; }
 		rect:nth-child(7){ animation: rect7 0.5s forwards; }
 		rect:nth-child(8){ animation: rect8_9 1.5s forwards; }
-		rect:nth-child(9){ animation: rect8_9 2.5s forwards; }
+		rect:nth-child(9){ animation: rect8_9 2.4s forwards; }
 		rect:nth-child(10){ animation: rect10 2s forwards; }
 		rect:nth-child(11){ animation: rect11 1.5s forwards; }
 		rect:nth-child(12){ animation: rect12 1s forwards; }

@@ -906,8 +906,8 @@ video {
 }
 
 .anim-graph._active .graph rect:nth-child(2) {
-  -webkit-animation: rect2 2.5s forwards;
-          animation: rect2 2.5s forwards;
+  -webkit-animation: rect2 2.4s forwards;
+          animation: rect2 2.4s forwards;
 }
 
 .anim-graph._active .graph rect:nth-child(3) {
@@ -916,13 +916,13 @@ video {
 }
 
 .anim-graph._active .graph rect:nth-child(4) {
-  -webkit-animation: rect4 2.5s forwards;
-          animation: rect4 2.5s forwards;
+  -webkit-animation: rect4 2.4s forwards;
+          animation: rect4 2.4s forwards;
 }
 
 .anim-graph._active .graph rect:nth-child(5) {
-  -webkit-animation: rect5 3s forwards;
-          animation: rect5 3s forwards;
+  -webkit-animation: rect5 2s forwards;
+          animation: rect5 2s forwards;
 }
 
 .anim-graph._active .graph rect:nth-child(6) {
@@ -941,8 +941,8 @@ video {
 }
 
 .anim-graph._active .graph rect:nth-child(9) {
-  -webkit-animation: rect8_9 2.5s forwards;
-          animation: rect8_9 2.5s forwards;
+  -webkit-animation: rect8_9 2.4s forwards;
+          animation: rect8_9 2.4s forwards;
 }
 
 .anim-graph._active .graph rect:nth-child(10) {
