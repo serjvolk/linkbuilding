@@ -20,7 +20,7 @@
 				<div class="f-aic nlc-mr-8">
 					<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 					<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-					<svg id="svg1" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+					<svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -33,14 +33,13 @@
     <text x="20" y="39.5" font-size="10" fill="white" text-anchor="middle">E</text>
     <text x="30" y="39.5" font-size="10" fill="white" text-anchor="middle">A</text>
     <text x="41.5" y="39.5" font-size="10" fill="white" text-anchor="middle">D</text>
-    <g clip-path="url(#clip0_10538_2743)">
-        <rect x="38" y="8.5" width="7.51" height="7.51" fill="white"/>
+    <g class="svgFigures" fill="white">
+        <rect class="svgFigures__item active" x="38" y="8.5" width="7.51" height="7.51"/>
+        <!-- <path class="svgFigures__item" d="M 38 15.01 L 45.51 15.01 L 41.755 8.5 Z"/>
+        <circle class="svgFigures__item" cx="41.755" cy="11.755" r="3.755"/>
+        <rect class="svgFigures__item" x="38" y="10" width="7.51" height="4.51"></rect>
+        <polygon class="svgFigures__item" points="38,12 41.5,15 45,12 41.5,8.5" fill="white"></polygon> -->
     </g>
-    <defs>
-        <clipPath id="clip0_10538_2743">
-            <rect width="37.12" height="32" fill="white" transform="translate(8.5 8)"/>
-        </clipPath>
-    </defs>
 </svg>
 				</div>
 				<button class="btn btn_black js-show-popup header__btn">Замовити</button>
@@ -50,10 +49,35 @@
 
 	<!-- First screen -->
 	<div class="fScreen container padding-wrap">
-		<div class="fScreen__bg ta-c"> <!--  _anim-items _anim-no-hide anim-up-down -->
-			<img src="img/fScreen.svg" alt="">
+		<div class="fScreen__bg ta-c">
+			<div class="fScreenCard">
+				<svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+    <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
+    <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
+    <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text id="text3" x="30" y="15.5" font-size="10" fill="white" text-anchor="middle">O</text>
+    <text id="text4" x="10" y="27.5" font-size="10" fill="white" text-anchor="middle">T</text>
+    <text x="20" y="27.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text x="30" y="27.5" font-size="10" fill="white" text-anchor="middle">A</text>
+    <text x="41.5" y="27.5" font-size="10" fill="white" text-anchor="middle">M</text>
+    <text x="10" y="39.5" font-size="10" fill="white" text-anchor="middle">L</text>
+    <text x="20" y="39.5" font-size="10" fill="white" text-anchor="middle">E</text>
+    <text x="30" y="39.5" font-size="10" fill="white" text-anchor="middle">A</text>
+    <text x="41.5" y="39.5" font-size="10" fill="white" text-anchor="middle">D</text>
+    <g class="svgFigures" fill="white">
+        <rect class="svgFigures__item active" x="38" y="8.5" width="7.51" height="7.51"/>
+        <!-- <path class="svgFigures__item" d="M 38 15.01 L 45.51 15.01 L 41.755 8.5 Z"/>
+        <circle class="svgFigures__item" cx="41.755" cy="11.755" r="3.755"/>
+        <rect class="svgFigures__item" x="38" y="10" width="7.51" height="4.51"></rect>
+        <polygon class="svgFigures__item" points="38,12 41.5,15 45,12 41.5,8.5" fill="white"></polygon> -->
+    </g>
+</svg>
+				<img class="fScreenCard__card" src="img/fScreenCard.svg" alt="">
+				<img class="fScreenCard__mark" src="img/checkMark.png" alt="">
+			</div>
+			
 		</div>
-		<div class="fScreen__body"> <!--  _anim-items _anim-no-hide anim-down-up -->
+		<div class="fScreen__body">
 			<p class="text-huge">Віддалений Linkbuilding TeamLead</p>
 			<p>це послуга по створенню стратегії linkbuilding'а проекту та контроль якості виконання робіт, що допомагає збільшити відсоток працюючих посилань на <span class="bold">20-300%</span> в залежності від рівня команди.</p>
 			<div class="fScreen__row">
@@ -433,7 +457,7 @@
 		<div class="readyToOrder__body">
 			<p class="text-huge">Готові замовити послугу Віддалений Linkbuilding TeamLead?</p>
 			<button class="btn btn_white btn_modSvg js-show-popup">
-				<svg id="svg2" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+				<svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -446,14 +470,13 @@
     <text x="20" y="39.5" font-size="10" fill="white" text-anchor="middle">E</text>
     <text x="30" y="39.5" font-size="10" fill="white" text-anchor="middle">A</text>
     <text x="41.5" y="39.5" font-size="10" fill="white" text-anchor="middle">D</text>
-    <g clip-path="url(#clip0_10538_2743)">
-        <rect x="38" y="8.5" width="7.51" height="7.51" fill="white"/>
+    <g class="svgFigures" fill="white">
+        <rect class="svgFigures__item active" x="38" y="8.5" width="7.51" height="7.51"/>
+        <!-- <path class="svgFigures__item" d="M 38 15.01 L 45.51 15.01 L 41.755 8.5 Z"/>
+        <circle class="svgFigures__item" cx="41.755" cy="11.755" r="3.755"/>
+        <rect class="svgFigures__item" x="38" y="10" width="7.51" height="4.51"></rect>
+        <polygon class="svgFigures__item" points="38,12 41.5,15 45,12 41.5,8.5" fill="white"></polygon> -->
     </g>
-    <defs>
-        <clipPath id="clip0_10538_2743">
-            <rect width="37.12" height="32" fill="white" transform="translate(8.5 8)"/>
-        </clipPath>
-    </defs>
 </svg>
 				<span class="ml-16">Замовити</span>
 			</button>
@@ -496,7 +519,7 @@
 						<div class="f-aic nlc-mr-8">
 							<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 							<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-							<svg id="svg3" class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
+							<svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="#2B2B42"/>
     <text id="text1" x="10" y="15.5" font-size="10" fill="white" text-anchor="middle">S</text>
     <text id="text2" x="20" y="15.5" font-size="10" fill="white" text-anchor="middle">E</text>
@@ -509,14 +532,13 @@
     <text x="20" y="39.5" font-size="10" fill="white" text-anchor="middle">E</text>
     <text x="30" y="39.5" font-size="10" fill="white" text-anchor="middle">A</text>
     <text x="41.5" y="39.5" font-size="10" fill="white" text-anchor="middle">D</text>
-    <g clip-path="url(#clip0_10538_2743)">
-        <rect x="38" y="8.5" width="7.51" height="7.51" fill="white"/>
+    <g class="svgFigures" fill="white">
+        <rect class="svgFigures__item active" x="38" y="8.5" width="7.51" height="7.51"/>
+        <!-- <path class="svgFigures__item" d="M 38 15.01 L 45.51 15.01 L 41.755 8.5 Z"/>
+        <circle class="svgFigures__item" cx="41.755" cy="11.755" r="3.755"/>
+        <rect class="svgFigures__item" x="38" y="10" width="7.51" height="4.51"></rect>
+        <polygon class="svgFigures__item" points="38,12 41.5,15 45,12 41.5,8.5" fill="white"></polygon> -->
     </g>
-    <defs>
-        <clipPath id="clip0_10538_2743">
-            <rect width="37.12" height="32" fill="white" transform="translate(8.5 8)"/>
-        </clipPath>
-    </defs>
 </svg>
 						</div>
 						<div class="footer__socials">

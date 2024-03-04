@@ -41,68 +41,66 @@ function hidePopupR(){
 
 ////////////////////////////////////// АНИМАЦИЯ SVG-КАРТИНКИ ////////////////////////////////////
 
-function animateText(svgID) {
-	var textElements = document.querySelectorAll('svg#'+svgID+' text');
-	var letters = ['S', 'E', 'O', 'T', 'E', 'A', 'M', 'L', 'E', 'A', 'D'];
-	var animationCount = 0;
-	const MAX_ANIMATIONS = 4; // Количество анимаций
+// Получить все элементы text от всех svg в один объект
+var allSvgTexts = [];
+(function getAllElements(){
+	const svgElements = document.querySelectorAll('.logoSvg');
+	svgElements.forEach((svgElement, indexSvg) => {
+		const textElements = svgElement.getElementsByTagName('text');
+		allSvgTexts[indexSvg] = [];
+		for (let indexText = 0; indexText < textElements.length; indexText++) {
+			allSvgTexts[indexSvg][indexText] = textElements[indexText];
+		}
+	});
+})();
+
+// Обновить text по индексу у всех svg
+function updateText(index, letter) {
+	for(let s = 0; s < allSvgTexts.length; s++){
+	  allSvgTexts[s][index].textContent = letter;
+	}
+}
+
+let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let alphabetLength = alphabet.length;
+// Получить случайную букву
+function getRandomLetter() {
+	let randomIndex = Math.floor(Math.random() * alphabetLength);
+	return alphabet[randomIndex];
+}
+
+let letters = ['S', 'E', 'O', 'T', 'E', 'A', 'M', 'L', 'E', 'A', 'D'];
+const MAX_ANIMATIONS = 4; // Количество анимаций
+// Анимация картинок
+function animateText() {
+	let animationCount = 0;
 	let lastIndex = 0;
 	let textUpdatedInLoop = false;
-
-	function updateText(element, letter) {
-	  element.textContent = letter;
-	}
-
-	// Получить случайную букву
-	function getRandomLetter() {
-		let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		let randomIndex = Math.floor(Math.random() * alphabet.length);
-		return alphabet[randomIndex];
-	}
 
 	function animate() {
 		animationCount++;
 		textUpdatedInLoop = false;
-		textElements.forEach(function(element, index) {
-			if(index >= lastIndex){
+		for(let i = 0; i < letters.length; i++){
+			if(i >= lastIndex){
 				if(animationCount % MAX_ANIMATIONS === 0 && textUpdatedInLoop === false){
-					updateText(element, letters[index]);
+					updateText(i, letters[i]);
 					lastIndex++;
 					textUpdatedInLoop = true;
 				}else{
-					updateText(element, getRandomLetter());
+					updateText(i, getRandomLetter());
 				}
 			}
 			if(lastIndex > letters.length-1){
 				clearInterval(animationInterval);
 			}
-		});
+		}
 	}
 
 	var animationInterval = setInterval(animate, 80);
 }
 
-//animateText('svg1');
-//setInterval(() => animateText('svg1'), 6000);
-
-//animateText('svg2');
-//setInterval(() => animateText('svg2'), 6000);
-
-//animateText('svg3');
-//setInterval(() => animateText('svg3'), 6000);
-
-let allSvgTexts = [];
-const svgElements = document.querySelectorAll('.logoSvg');
-svgElements.forEach((svgElement, indexSvg) => {
-    const textElements = svgElement.getElementsByTagName('text');
-    allSvgTexts[indexSvg] = [];
-    for (let indexText = 0; indexText < textElements.length; indexText++) {
-        allSvgTexts[indexSvg][indexText] = textElements[indexText];
-    }
-});
-
-allSvgTexts[0][2].textContent = "4";
-allSvgTexts[1][4].textContent = "7";
+animateText();
+setInterval(animateText, 6000);
 
 ////////////////////////////// ///// АНИМBАТЬ ЭЛЕМЕНТЫ /////// //////////////////////////
 

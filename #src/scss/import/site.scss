@@ -73,6 +73,35 @@
 	}
 }
 
+
+.fScreenCard{
+	display: inline-block;
+	position: relative;
+	&__mark{
+		position: absolute;
+		z-index: 2;
+		top: 86px;
+		left: 141px;
+	}
+	.logoSvg{
+		position: absolute;
+		top: 72px;
+		left: 40px;
+		transform: rotate(-15deg);
+		text{
+			fill: $black;
+			font-family: "FixelDisplay-Bold";
+		}
+		g rect{
+			fill: $black;
+		}
+		rect{
+			fill: $white;
+		}
+	}
+}
+
+
 .subjects{
 	height: 120px;
 	position: relative;

@@ -20,7 +20,7 @@
 				<div class="f-aic nlc-mr-8">
 					<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 					<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-					@@include('img/seo-team-lead.svg', {"id": "svg1"})
+					@@include('img/seo-team-lead.svg')
 				</div>
 				<button class="btn btn_black js-show-popup header__btn">Замовити</button>
 			</div>
@@ -29,10 +29,15 @@
 
 	<!-- First screen -->
 	<div class="fScreen container padding-wrap">
-		<div class="fScreen__bg ta-c"> <!--  _anim-items _anim-no-hide anim-up-down -->
-			<img src="img/fScreen.svg" alt="">
+		<div class="fScreen__bg ta-c">
+			<div class="fScreenCard">
+				@@include('img/seo-team-lead.svg')
+				<img class="fScreenCard__card" src="img/fScreenCard.svg" alt="">
+				<img class="fScreenCard__mark" src="img/checkMark.png" alt="">
+			</div>
+			
 		</div>
-		<div class="fScreen__body"> <!--  _anim-items _anim-no-hide anim-down-up -->
+		<div class="fScreen__body">
 			<p class="text-huge">Віддалений Linkbuilding TeamLead</p>
 			<p>це послуга по створенню стратегії linkbuilding'а проекту та контроль якості виконання робіт, що допомагає збільшити відсоток працюючих посилань на <span class="bold">20-300%</span> в залежності від рівня команди.</p>
 			<div class="fScreen__row">
@@ -348,7 +353,7 @@
 		<div class="readyToOrder__body">
 			<p class="text-huge">Готові замовити послугу Віддалений Linkbuilding TeamLead?</p>
 			<button class="btn btn_white btn_modSvg js-show-popup">
-				@@include('img/seo-team-lead.svg', {"id": "svg2"})
+				@@include('img/seo-team-lead.svg')
 				<span class="ml-16">Замовити</span>
 			</button>
 			<p>будемо раді допомогти <img src="img/heart.png" alt=""></p>
@@ -390,7 +395,7 @@
 						<div class="f-aic nlc-mr-8">
 							<img loading="lazy" width="49" height="48" src="img/logo.svg" alt="">
 							<img loading="lazy" width="162" height="24" src="img/logo-text.svg" alt="">
-							@@include('img/seo-team-lead.svg', {"id": "svg3"})
+							@@include('img/seo-team-lead.svg')
 						</div>
 						<div class="footer__socials">
 							<a href="https://t.me/WorkingDrops_bot" class="social social_telegram mr-32">

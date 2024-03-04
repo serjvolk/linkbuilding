@@ -17,17 +17,17 @@
 }
 
 @font-face {
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay-Regular";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-SemiBold.woff") format("woff"), url("../fonts/FixelDisplay-SemiBold.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Regular";
+  font-family: "FixelDisplay-SemiBold";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-SemiBold.woff") format("woff"), url("../fonts/FixelDisplay-SemiBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -747,6 +747,40 @@ video {
   background: rgba(43, 43, 66, 0.1);
   border-radius: 32px;
   height: 100%;
+}
+
+.fScreenCard {
+  display: inline-block;
+  position: relative;
+}
+
+.fScreenCard__mark {
+  position: absolute;
+  z-index: 2;
+  top: 86px;
+  left: 141px;
+}
+
+.fScreenCard .logoSvg {
+  position: absolute;
+  top: 72px;
+  left: 40px;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.fScreenCard .logoSvg text {
+  fill: #2B2B42;
+  font-family: "FixelDisplay-Bold";
+}
+
+.fScreenCard .logoSvg g rect {
+  fill: #2B2B42;
+}
+
+.fScreenCard .logoSvg rect {
+  fill: #FFFFFF;
 }
 
 .subjects {
