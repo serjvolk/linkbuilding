@@ -13,7 +13,7 @@
         <text x="30" y="39.5" font-size="10">A</text>
         <text x="41.5" y="39.5" font-size="10">D</text>
     </g>
-    <g class="svgFigures" fill="@@fill">
-        <rect class="svgFigures__item active" x="38" y="8.5" width="7.51" height="7.51"/>
+    <g fill="@@fill">
+        <rect x="38" y="8.5" width="7.51" height="7.51"/>
     </g>
 </svg>
