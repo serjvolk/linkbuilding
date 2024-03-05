@@ -94,58 +94,6 @@
 	}
 }
 
-
-.subjects{
-	height: 120px;
-	position: relative;
-	&__item{
-		position: absolute;
-		top: 0;
-		left: 0;
-		fill: $black;
-		visibility: hidden;
-		height: 89px;
-		animation: subjects-other 5s infinite;
-		&_1{
-			width: 134.5px;
-			animation: subjects-first 5s infinite;
-		}
-		&_2{
-			width: 94px;
-		}
-		&_3{
-			width: 129.5px;
-			animation-delay: 0.35s;
-		}
-		&_4{
-			width: 89px;
-			animation-delay: 0.7s;
-		}
-		&_5{
-			width: 55.5px;
-			animation-delay: 1.05s;
-		}
-		&_6{
-			width: 80px;
-			animation-delay: 1.4s;
-		}
-	}
-}
-
-@keyframes subjects-first {
-	0%{visibility: hidden;}
-	35%{visibility: hidden;}
-	36%{visibility: visible;}
-	100%{visibility: visible;}
-}
-
-@keyframes subjects-other {
-	0%{visibility: visible;}
-	6%{opacity: visible;}
-	7%{visibility: hidden;}
-	100%{visibility: hidden;}
-}
-
 ///////////////////////////////////////////////////////////////////////////////
 
 .workPlan {

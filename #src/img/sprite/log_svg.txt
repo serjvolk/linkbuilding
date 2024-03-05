@@ -1,9 +1,3 @@
 img/sprite/icons-sprite.svg#arrow
 img/sprite/icons-sprite.svg#telegram
 img/sprite/icons-sprite.svg#viber
-img/sprite/subjects-sprite.svg#01
-img/sprite/subjects-sprite.svg#02
-img/sprite/subjects-sprite.svg#03
-img/sprite/subjects-sprite.svg#04
-img/sprite/subjects-sprite.svg#05
-img/sprite/subjects-sprite.svg#06
