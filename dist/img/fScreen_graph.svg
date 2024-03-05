@@ -1,0 +1,124 @@
+<svg class="w-100" width="288" height="90" viewBox="0 0 288 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<rect y="1" width="16.6667" height="0" rx="8.33333" fill="url(#paint0_linear_10538_2814)">
+		<animate begin="r1_r.end; 0s" id="r1" attributeName="height" values="0;89" dur="300ms" fill="freeze"/>
+		<animate begin="r1_r.end; 0s" attributeName="y" values="90;1" dur="300ms" fill="freeze"/>
+		<animate id="r1_r" begin="r2_r.end-80ms" attributeName="height" values="89;0" dur="200ms" fill="freeze"/>
+		<animate begin="r2_r.end-80ms" attributeName="y" values="1;90" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="24.6667" y="67" width="16.6667" height="0" rx="8.33333" fill="url(#paint1_linear_10538_2814)">
+		<animate id="r2" begin="r1.end-50ms" attributeName="height" values="0;22" dur="300ms" fill="freeze"/>
+		<animate begin="r1.end-50ms" attributeName="y" values="89;67" dur="300ms" fill="freeze"/>
+		<animate id="r2_r" begin="r3_r.end-80ms" attributeName="height" values="22;0" dur="200ms" fill="freeze"/>
+		<animate begin="r3_r.end-80ms" attributeName="y" values="67;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="49.3333" y="28" width="16.6667" height="0" rx="8.33333" fill="url(#paint2_linear_10538_2814)">
+		<animate id="r3" begin="r2.end-50ms" attributeName="height" values="0;61" dur="300ms" fill="freeze"/>
+		<animate begin="r2.end-50ms" attributeName="y" values="89;28" dur="300ms" fill="freeze"/>
+		<animate id="r3_r" begin="r4_r.end-80ms" attributeName="height" values="61;0" dur="200ms" fill="freeze"/>
+		<animate begin="r4_r.end-80ms" attributeName="y" values="28;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="74" y="52" width="16.6667" height="0" rx="8.33333" fill="url(#paint3_linear_10538_2814)">
+		<animate id="r4" begin="r3.end-50ms" attributeName="height" values="0;37" dur="300ms" fill="freeze"/>
+		<animate begin="r3.end-50ms" attributeName="y" values="89;52" dur="300ms" fill="freeze"/>
+		<animate id="r4_r" begin="r5_r.end-80ms" attributeName="height" values="37;0" dur="200ms" fill="freeze"/>
+		<animate begin="r5_r.end-80ms" attributeName="y" values="52;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="98.6667" y="11" width="16.6667" height="0" rx="8.33333" fill="url(#paint4_linear_10538_2814)">
+		<animate id="r5" begin="r4.end-50ms" attributeName="height" values="0;78" dur="300ms" fill="freeze"/>
+		<animate begin="r4.end-50ms" attributeName="y" values="89;11" dur="300ms" fill="freeze"/>
+		<animate id="r5_r" begin="r6_r.end-80ms" attributeName="height" values="78;0" dur="200ms" fill="freeze"/>
+		<animate begin="r6_r.end-80ms" attributeName="y" values="11;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="123.333" y="1" width="16.6667" height="0" rx="8.33333" fill="url(#paint5_linear_10538_2814)">
+		<animate id="r6" begin="r5.end-50ms" attributeName="height" values="0;89" dur="300ms" fill="freeze"/>
+		<animate begin="r5.end-50ms" attributeName="y" values="89;1" dur="300ms" fill="freeze"/>
+		<animate id="r6_r" begin="r7_r.end-80ms" attributeName="height" values="89;0" dur="200ms" fill="freeze"/>
+		<animate begin="r7_r.end-80ms" attributeName="y" values="1;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="148" y="21" width="16.6667" height="0" rx="8.33333" fill="url(#paint6_linear_10538_2814)">
+		<animate id="r7" begin="r6.end-50ms" attributeName="height" values="0;68" dur="300ms" fill="freeze"/>
+		<animate begin="r6.end-50ms" attributeName="y" values="89;21" dur="300ms" fill="freeze"/>
+		<animate id="r7_r" begin="r8_r.end-80ms" attributeName="height" values="68;0" dur="200ms" fill="freeze"/>
+		<animate begin="r8_r.end-80ms" attributeName="y" values="21;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="172.667" y="33" width="16.6667" height="0" rx="8.33333" fill="url(#paint7_linear_10538_2814)">
+		<animate id="r8" begin="r7.end-50ms" attributeName="height" values="0;56" dur="300ms" fill="freeze"/>
+		<animate begin="r7.end-50ms" attributeName="y" values="89;33" dur="300ms" fill="freeze"/>
+		<animate id="r8_r" begin="r9_r.end-80ms" attributeName="height" values="56;0" dur="200ms" fill="freeze"/>
+		<animate begin="r9_r.end-80ms" attributeName="y" values="33;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="197.333" y="33" width="16.6667" height="0" rx="8.33333" fill="url(#paint8_linear_10538_2814)">
+		<animate id="r9" begin="r8.end-50ms" attributeName="height" values="0;56" dur="300ms" fill="freeze"/>
+		<animate begin="r8.end-50ms" attributeName="y" values="89;33" dur="300ms" fill="freeze"/>
+		<animate id="r9_r" begin="r10_r.end-80ms" attributeName="height" values="56;0" dur="200ms" fill="freeze"/>
+		<animate begin="r10_r.end-80ms" attributeName="y" values="33;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="222" y="28" width="16.6667" height="0" rx="8.33333" fill="url(#paint9_linear_10538_2814)">
+		<animate id="r10" begin="r9.end-50ms" attributeName="height" values="0;61" dur="300ms" fill="freeze"/>
+		<animate begin="r9.end-50ms" attributeName="y" values="89;28" dur="300ms" fill="freeze"/>
+		<animate id="r10_r" begin="r11_r.end-80ms" attributeName="height" values="61;0" dur="200ms" fill="freeze"/>
+		<animate begin="r11_r.end-80ms" attributeName="y" values="28;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="246.667" y="1" width="16.6667" height="0" rx="8.33333" fill="url(#paint10_linear_10538_2814)">
+		<animate id="r11" begin="r10.end-50ms" attributeName="height" values="0;89" dur="300ms" fill="freeze"/>
+		<animate begin="r10.end-50ms" attributeName="y" values="89;1" dur="300ms" fill="freeze"/>
+		<animate id="r11_r" begin="r12_r.end-80ms" attributeName="height" values="89;0" dur="200ms" fill="freeze"/>
+		<animate begin="r12_r.end-80ms" attributeName="y" values="1;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<rect x="271.333" y="21" width="16.6667" height="0" rx="8.33333" fill="url(#paint11_linear_10538_2814)">
+		<animate id="r12" begin="r11.end-50ms" attributeName="height" values="0;68" dur="300ms" fill="freeze"/>
+		<animate begin="r11.end-50ms" attributeName="y" values="89;21" dur="300ms" fill="freeze"/>
+		<animate id="r12_r" begin="r12.end+3s" attributeName="height" values="68;0" dur="200ms" fill="freeze"/>
+		<animate begin="r12.end+3s" attributeName="y" values="21;89" dur="200ms" fill="freeze"/>
+	</rect>
+	<defs>
+	<linearGradient id="paint0_linear_10538_2814" x1="8.33333" y1="0.712891" x2="8.33333" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint1_linear_10538_2814" x1="33" y1="67.7129" x2="33" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint2_linear_10538_2814" x1="57.6667" y1="28.7129" x2="57.6667" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint3_linear_10538_2814" x1="82.3333" y1="52.7129" x2="82.3333" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint4_linear_10538_2814" x1="107" y1="11.7129" x2="107" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint5_linear_10538_2814" x1="131.667" y1="0.712891" x2="131.667" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint6_linear_10538_2814" x1="156.333" y1="21.7129" x2="156.333" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint7_linear_10538_2814" x1="181" y1="33.7129" x2="181" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint8_linear_10538_2814" x1="205.667" y1="33.7129" x2="205.667" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint9_linear_10538_2814" x1="230.333" y1="28.7129" x2="230.333" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint10_linear_10538_2814" x1="255" y1="0.712891" x2="255" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	<linearGradient id="paint11_linear_10538_2814" x1="279.667" y1="21.7129" x2="279.667" y2="89.7129" gradientUnits="userSpaceOnUse">
+	<stop stop-color="#2B2B42"/>
+	<stop offset="1" stop-color="#2B2B42" stop-opacity="0"/>
+	</linearGradient>
+	</defs>
+</svg>

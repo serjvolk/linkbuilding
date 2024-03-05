@@ -1,10 +1,10 @@
 <svg class="logoSvg" xmlns="http://www.w3.org/2000/svg" width="54" height="48" viewBox="0 0 54 48" fill="none">
     <rect xmlns="http://www.w3.org/2000/svg" x="0.5" width="53.12" height="48" rx="8" fill="@@bg"/>
     <g fill="@@fill" text-anchor="middle">
-        <text id="text1" x="10" y="15.5" font-size="10">S</text>
-        <text id="text2" x="20" y="15.5" font-size="10">E</text>
-        <text id="text3" x="30" y="15.5" font-size="10">O</text>
-        <text id="text4" x="10" y="27.5" font-size="10">T</text>
+        <text x="10" y="15.5" font-size="10">S</text>
+        <text x="20" y="15.5" font-size="10">E</text>
+        <text x="30" y="15.5" font-size="10">O</text>
+        <text x="10" y="27.5" font-size="10">T</text>
         <text x="20" y="27.5" font-size="10">E</text>
         <text x="30" y="27.5" font-size="10">A</text>
         <text x="41.5" y="27.5" font-size="10">M</text>
