@@ -1,14 +1,6 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "FixelDisplay-Medium";
-  font-display: swap;
-  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "FixelDisplay-Bold";
   font-display: swap;
   src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
@@ -20,6 +12,14 @@
   font-family: "FixelDisplay-Regular";
   font-display: swap;
   src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FixelDisplay-Medium";
+  font-display: swap;
+  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
