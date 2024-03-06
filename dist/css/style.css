@@ -761,6 +761,37 @@ video {
   left: 141px;
 }
 
+.fScreenCard__card {
+  position: relative;
+}
+
+.fScreenCard__test {
+  position: absolute;
+  top: 94px;
+  left: 146px;
+  width: 65px;
+  height: 65px;
+  z-index: 1000;
+  border-radius: 99px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.25)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+}
+
+.fScreenCard__test:after {
+  content: "";
+  top: 14px;
+  left: 18px;
+  position: absolute;
+  width: 29px;
+  z-index: 2;
+  height: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg width='29' height='36' viewBox='0 0 29 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.7004 1.04291C24.7373 0.781257 23.6761 0.890722 22.786 1.40463C21.8959 1.91855 21.2901 2.70859 21.0155 3.74771L14.8846 27.1009L5.07811 24.397C4.115 24.1353 3.05384 24.2448 2.16371 24.7587C1.27359 25.2726 0.667818 26.0627 0.393249 27.1018C-0.136278 29.1058 1.08937 31.2287 3.08966 31.7721L16.5732 35.4352C17.5363 35.6969 18.5974 35.5874 19.4875 35.0735C20.3777 34.5596 20.9834 33.7696 21.258 32.7304L28.3968 5.71324C28.9263 3.70921 27.7279 1.63351 25.7004 1.04291Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
 .fScreenCard .logoSvg {
   position: absolute;
   top: 72px;
