@@ -159,12 +159,41 @@ $(".js-itemCost-logic .itemCost").click(function(){
     }, 100);
 })
 
-//////////////////////////////////////////////////////////////////////////////////
+/////////////////////// АНИМАЦИЯ ТЕМАТИКИ ///////////////////////////////////////
 
-setInterval(function(){
-    $(".anim-graph").removeClass("_active");
-    setTimeout(function(){ $(".anim-graph").addClass("_active"); },300)
-},5500);
+function activateItems() {
+    var items = $('.subjects .subjects__item');
+    var currentIndex = 0;
+
+    function activateNext() {
+        // Убираем класс active у всех элементов
+        items.removeClass('active');
+        
+        // Если текущий индекс равен последнему элементу
+        if (currentIndex === items.length - 1) {
+            // Назначаем класс active последнему элементу на 3 секунды
+            items.eq(currentIndex).addClass('active');
+            setTimeout(function() {
+                items.eq(currentIndex).removeClass('active');
+                currentIndex = 0; // Сбрасываем индекс
+                activateNext(); // Запускаем заново
+            }, 3000);
+        } else {
+            // Назначаем класс active текущему элементу на 300 мс
+            items.eq(currentIndex).addClass('active');
+            setTimeout(function() {
+                items.eq(currentIndex).removeClass('active');
+                currentIndex++;
+                activateNext(); // Рекурсивно вызываем себя для следующего элемента
+            }, 300);
+        }
+    }
+
+    // Запускаем функцию активации
+    activateNext();
+}
+
+activateItems();
 
 //////////////////////////////////////////////////////////////////////////////////
 

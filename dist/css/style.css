@@ -9,17 +9,17 @@
 }
 
 @font-face {
-  font-family: "FixelDisplay-Regular";
+  font-family: "FixelDisplay-Medium";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Medium";
+  font-family: "FixelDisplay-Regular";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -772,6 +772,48 @@ video {
 
 .fScreenCard .logoSvg text {
   font-family: "FixelDisplay-Bold";
+}
+
+.subjects {
+  height: 120px;
+  position: relative;
+}
+
+.subjects__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #2B2B42;
+  visibility: hidden;
+  height: 89px;
+}
+
+.subjects__item.active {
+  visibility: visible;
+}
+
+.subjects__item_1 {
+  width: 94px;
+}
+
+.subjects__item_2 {
+  width: 80px;
+}
+
+.subjects__item_3 {
+  width: 89px;
+}
+
+.subjects__item_4 {
+  width: 55.5px;
+}
+
+.subjects__item_5 {
+  width: 129.5px;
+}
+
+.subjects__item_6 {
+  width: 134.5px;
 }
 
 .workPlan__row {

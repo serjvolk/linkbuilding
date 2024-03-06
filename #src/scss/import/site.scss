@@ -94,6 +94,40 @@
 	}
 }
 
+.subjects{
+	height: 120px;
+	position: relative;
+	&__item{
+		position: absolute;
+		top: 0;
+		left: 0;
+		fill: $black;
+		visibility: hidden;
+		height: 89px;
+		&.active{
+			visibility: visible;
+		}
+		&_1{
+			width: 94px;
+		}
+		&_2{
+			width: 80px;
+		}
+		&_3{
+			width: 89px;
+		}
+		&_4{
+			width: 55.5px;
+		}
+		&_5{
+			width: 129.5px;
+		}
+		&_6{
+			width: 134.5px;
+		}
+	}
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
 .workPlan {

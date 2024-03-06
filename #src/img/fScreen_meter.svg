@@ -38,167 +38,167 @@
         так же нужно изменить значенья на один меньше от предыдущего, либо на один больше если это последний text -->
 		<text x="105" y="-2">
 			8
-			<animate id="a1" begin="a0.begin+200ms;5ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a0.begin+200ms;5ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a1" begin="a0.begin+200ms;5ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a0.begin+200ms;5ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			9
-			<animate id="a2" begin="a1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a1.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a2" begin="a1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a1.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			0
-			<animate id="a3" begin="a2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a2.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a3" begin="a2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a2.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			1
-			<animate id="a4" begin="a3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a3.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a4" begin="a3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a3.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			2
-			<animate id="a5" begin="a4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a4.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a5" begin="a4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a4.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			3
-			<animate id="a6" begin="a5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a5.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a6" begin="a5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a5.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			4
-			<animate id="a7" begin="a6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="a6.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="a7" begin="a6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="a6.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			5
-			<animate id="a8" begin="a7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="a7.begin+200ms" attributeName="y" values="-2;58;98" dur="450ms" fill="freeze"/>
-			<animate begin="a8.end+2s" attributeName="y" values="98;120" dur="50ms" fill="freeze"/>
+			<animate id="a8" begin="a7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="a7.begin+200ms" attributeName="y" values="-2;58;98" dur="360ms" fill="freeze"/>
+			<animate begin="a8.end+2s" attributeName="y" values="98;120" dur="40ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			6
-			<animate id="a9" begin="a8.begin+200ms" attributeName="opacity" values="0.5;1" dur="250ms" fill="freeze"/>
-			<animate begin="a8.begin+200ms" attributeName="y" values="-2;58" dur="250ms" fill="freeze"/>
-			<animate id="a9_b" begin="a9.end+2s" attributeName="opacity" values="1;0.5" dur="250ms" fill="freeze"/>
-			<animate begin="a9.end+2s" attributeName="y" values="58;120" dur="250ms" fill="freeze"/>
+			<animate id="a9" begin="a8.begin+200ms" attributeName="opacity" values="0.5;1" dur="200ms" fill="freeze"/>
+			<animate begin="a8.begin+200ms" attributeName="y" values="-2;58" dur="200ms" fill="freeze"/>
+			<animate id="a9_b" begin="a9.end+2s" attributeName="opacity" values="1;0.5" dur="200ms" fill="freeze"/>
+			<animate begin="a9.end+2s" attributeName="y" values="58;120" dur="200ms" fill="freeze"/>
 		</text>
 		<text x="105" y="-2">
 			7
-			<animate begin="a9.begin+200ms" attributeName="y" values="-2;18" dur="50ms" fill="freeze"/>
-			<animate id="a0" begin="a9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="a9_b.begin" attributeName="y" values="18;58;120" dur="450ms" fill="freeze"/>
+			<animate begin="a9.begin+200ms" attributeName="y" values="-2;18" dur="40ms" fill="freeze"/>
+			<animate id="a0" begin="a9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="a9_b.begin" attributeName="y" values="18;58;120" dur="360ms" fill="freeze"/>
 		</text>
 		<!-- Вторая цифра -->
 		<text x="178" y="-2">
 			7
-			<animate id="b1" begin="b0.begin+200ms;500ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b0.begin+200ms;500ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b1" begin="b0.begin+200ms;500ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b0.begin+200ms;500ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			8
-			<animate id="b2" begin="b1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b1.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b2" begin="b1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b1.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			9
-			<animate id="b3" begin="b2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b2.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b3" begin="b2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b2.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			0
-			<animate id="b4" begin="b3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b3.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b4" begin="b3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b3.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			1
-			<animate id="b5" begin="b4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b4.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b5" begin="b4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b4.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			2
-			<animate id="b6" begin="b5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b5.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b6" begin="b5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b5.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			3
-			<animate id="b7" begin="b6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="b6.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="b7" begin="b6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="b6.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			4
-			<animate id="b8" begin="b7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="b7.begin+200ms" attributeName="y" values="-2;58;98" dur="450ms" fill="freeze"/>
-			<animate begin="b8.end+2s" attributeName="y" values="98;120" dur="50ms" fill="freeze"/>
+			<animate id="b8" begin="b7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="b7.begin+200ms" attributeName="y" values="-2;58;98" dur="360ms" fill="freeze"/>
+			<animate begin="b8.end+2s" attributeName="y" values="98;120" dur="40ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			5
-			<animate id="b9" begin="b8.begin+200ms" attributeName="opacity" values="0.5;1" dur="250ms" fill="freeze"/>
-			<animate begin="b8.begin+200ms" attributeName="y" values="-2;58" dur="250ms" fill="freeze"/>
-			<animate id="b9_b" begin="b9.end+2s" attributeName="opacity" values="1;0.5" dur="250ms" fill="freeze"/>
-			<animate begin="b9.end+2s" attributeName="y" values="58;120" dur="250ms" fill="freeze"/>
+			<animate id="b9" begin="b8.begin+200ms" attributeName="opacity" values="0.5;1" dur="200ms" fill="freeze"/>
+			<animate begin="b8.begin+200ms" attributeName="y" values="-2;58" dur="200ms" fill="freeze"/>
+			<animate id="b9_b" begin="b9.end+2s" attributeName="opacity" values="1;0.5" dur="200ms" fill="freeze"/>
+			<animate begin="b9.end+2s" attributeName="y" values="58;120" dur="200ms" fill="freeze"/>
 		</text>
 		<text x="178" y="-2">
 			6
-			<animate begin="b9.begin+200ms" attributeName="y" values="-2;18" dur="50ms" fill="freeze"/>
-			<animate id="b0" begin="b9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="b9_b.begin" attributeName="y" values="18;58;120" dur="450ms" fill="freeze"/>
+			<animate begin="b9.begin+200ms" attributeName="y" values="-2;18" dur="40ms" fill="freeze"/>
+			<animate id="b0" begin="b9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="b9_b.begin" attributeName="y" values="18;58;120" dur="360ms" fill="freeze"/>
 		</text>
 		<!-- Третяя цифра -->
 		<text x="250" y="-2">
 			2
-			<animate id="f1" begin="f0.begin+200ms;1000ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f0.begin+200ms;1000ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f1" begin="f0.begin+200ms;1000ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f0.begin+200ms;1000ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			3
-			<animate id="f2" begin="f1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f1.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f2" begin="f1.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f1.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			4
-			<animate id="f3" begin="f2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f2.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f3" begin="f2.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f2.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			5
-			<animate id="f4" begin="f3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f3.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f4" begin="f3.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f3.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			6
-			<animate id="f5" begin="f4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f4.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f5" begin="f4.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f4.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			7
-			<animate id="f6" begin="f5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f5.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f6" begin="f5.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f5.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			8
-			<animate id="f7" begin="f6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="500ms" fill="freeze"/>
-			<animate begin="f6.begin+200ms" attributeName="y" values="-2;58;120" dur="500ms" fill="freeze"/>
+			<animate id="f7" begin="f6.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="400ms" fill="freeze"/>
+			<animate begin="f6.begin+200ms" attributeName="y" values="-2;58;120" dur="400ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			9
-			<animate id="f8" begin="f7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="f7.begin+200ms" attributeName="y" values="-2;58;98" dur="450ms" fill="freeze"/>
-			<animate begin="f8.end+2s" attributeName="y" values="98;120" dur="50ms" fill="freeze"/>
+			<animate id="f8" begin="f7.begin+200ms" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="f7.begin+200ms" attributeName="y" values="-2;58;98" dur="360ms" fill="freeze"/>
+			<animate begin="f8.end+2s" attributeName="y" values="98;120" dur="40ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			0
-			<animate id="f9" begin="f8.begin+200ms" attributeName="opacity" values="0.5;1" dur="250ms" fill="freeze"/>
-			<animate begin="f8.begin+200ms" attributeName="y" values="-2;58" dur="250ms" fill="freeze"/>
-			<animate id="f9_b" begin="f9.end+2s" attributeName="opacity" values="1;0.5" dur="250ms" fill="freeze"/>
-			<animate begin="f9.end+2s" attributeName="y" values="58;120" dur="250ms" fill="freeze"/>
+			<animate id="f9" begin="f8.begin+200ms" attributeName="opacity" values="0.5;1" dur="200ms" fill="freeze"/>
+			<animate begin="f8.begin+200ms" attributeName="y" values="-2;58" dur="200ms" fill="freeze"/>
+			<animate id="f9_b" begin="f9.end+2s" attributeName="opacity" values="1;0.5" dur="200ms" fill="freeze"/>
+			<animate begin="f9.end+2s" attributeName="y" values="58;120" dur="200ms" fill="freeze"/>
 		</text>
 		<text x="250" y="-2">
 			1
-			<animate begin="f9.begin+200ms" attributeName="y" values="-2;18" dur="50ms" fill="freeze"/>
-			<animate id="f0" begin="f9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="450ms" fill="freeze"/>
-			<animate begin="f9_b.begin" attributeName="y" values="18;58;120" dur="450ms" fill="freeze"/>
+			<animate begin="f9.begin+200ms" attributeName="y" values="-2;18" dur="40ms" fill="freeze"/>
+			<animate id="f0" begin="f9_b.begin" attributeName="opacity" values="0.5;1;0.5" dur="360ms" fill="freeze"/>
+			<animate begin="f9_b.begin" attributeName="y" values="18;58;120" dur="360ms" fill="freeze"/>
 		</text>
 	</g>
 	
