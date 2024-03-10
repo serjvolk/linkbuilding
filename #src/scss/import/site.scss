@@ -9,6 +9,7 @@
 		}
 	}
 	&__btn{
+		padding: 16px 48px 12px;
 		@media (max-width:625px) {
 		    display: none;
 		}
@@ -567,9 +568,6 @@
 	}
 	@media (min-width:799px) and (max-width:870px){
 		left: -12px;
-	}
-	&_gradient{
-		background: linear-gradient(74.3deg, #4CE49B 4.17%, #4EB5FF 27.08%, #933FFF 49.98%, #F20056 72.88%, #FFDA44 95.78%);
 	}
 	&_black{
 		background-color: $black;

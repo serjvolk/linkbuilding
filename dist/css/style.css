@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "FixelDisplay-Medium";
+  font-family: "FixelDisplay-Bold";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay-Medium";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -666,6 +666,10 @@ video {
   padding: 16px;
 }
 
+.header__btn {
+  padding: 16px 48px 12px;
+}
+
 .logoSvg {
   font-family: "FixelDisplay-Medium";
 }
@@ -1233,11 +1237,6 @@ video {
   padding: 0px 8px;
   color: #FFFFFF;
   font-family: "FixelDisplay-SemiBold";
-}
-
-.label_gradient {
-  background: -o-linear-gradient(15.7deg, #4CE49B 4.17%, #4EB5FF 27.08%, #933FFF 49.98%, #F20056 72.88%, #FFDA44 95.78%);
-  background: linear-gradient(74.3deg, #4CE49B 4.17%, #4EB5FF 27.08%, #933FFF 49.98%, #F20056 72.88%, #FFDA44 95.78%);
 }
 
 .label_black {
