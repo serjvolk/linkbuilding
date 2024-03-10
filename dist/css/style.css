@@ -977,7 +977,18 @@ video {
   pointer-events: none;
 }
 
+.details__title svg {
+  margin: -184px -58px -112px -28px;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-transform: translateY(112px);
+      -ms-transform: translateY(112px);
+          transform: translateY(112px);
+}
+
 .details__row {
+  margin-top: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1889,6 +1900,10 @@ video {
 
 @media (max-width: 1200px) {
   .details__title img {
+    display: none;
+  }
+
+  .details__title svg {
     display: none;
   }
 }
