@@ -274,29 +274,49 @@
 			border-radius: 32px;
 		}
 	}
-	&__title{
-		img{
-			margin: -64px -60px -72px -14px;
-			position: relative;
-			z-index: 2;
-			pointer-events: none;
-			@media (max-width:1200px) {
-				display: none;
+	&__gap{
+		@media (max-width:1207px) {
+			display: none;
+		}
+	}
+	&__svg{
+		width: 260px;
+		height: 235px;
+		box-shadow: 0px 4px 32px 0px rgba(43, 43, 66, 0.5);
+		margin: -136px 170px -14px 0;
+		position: relative;
+		border-radius: 37px;
+		background-color: #fff;
+		transform: rotate(-15deg);
+		z-index: 2;
+		@media (min-width:1206px) and (max-width:1296px) {
+			margin-right: calc(100vw - 1296px + 170px);
+		}
+		@media (max-width:1207px) {
+			margin: -48px 0 -14px 0;
+		}
+		@media (max-width:#{$md3}px) {
+			margin: -28px 0 -20px 0;
+			width: 197px;
+			height: 178px;
+			border-radius: 30px;
+			svg{
+				top: -2px;
+				left: -2px;
+				width: 200px;
+				height: 181px;
 			}
 		}
 		svg{
-			margin: -184px -58px -112px -28px;
-			position: relative;
-			z-index: 2;
-			pointer-events: none;
-			transform: translateY(112px);
-			@media (max-width:1200px) {
-				display: none;
-			}
+			position: absolute;
+			top: -3px;
+			left: -3px;
+			width: 265px;
+			height: 240px;
+			font-family: "FixelDisplay-SemiBold";
 		}
 	}
 	&__row{
-		margin-top: 125px;
 		display: flex;
 		gap: 32px;
 		.btn{

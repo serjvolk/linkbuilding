@@ -1,17 +1,17 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay-Medium";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Medium";
+  font-family: "FixelDisplay-Bold";
   font-display: swap;
-  src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
+  src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -970,25 +970,31 @@ video {
   border-radius: 64px;
 }
 
-.details__title img {
-  margin: -64px -60px -72px -14px;
+.details__svg {
+  width: 260px;
+  height: 235px;
+  -webkit-box-shadow: 0px 4px 32px 0px rgba(43, 43, 66, 0.5);
+          box-shadow: 0px 4px 32px 0px rgba(43, 43, 66, 0.5);
+  margin: -136px 170px -14px 0;
   position: relative;
+  border-radius: 37px;
+  background-color: #fff;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
   z-index: 2;
-  pointer-events: none;
 }
 
-.details__title svg {
-  margin: -184px -58px -112px -28px;
-  position: relative;
-  z-index: 2;
-  pointer-events: none;
-  -webkit-transform: translateY(112px);
-      -ms-transform: translateY(112px);
-          transform: translateY(112px);
+.details__svg svg {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 265px;
+  height: 240px;
+  font-family: "FixelDisplay-SemiBold";
 }
 
 .details__row {
-  margin-top: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1898,13 +1904,13 @@ video {
   }
 }
 
-@media (max-width: 1200px) {
-  .details__title img {
+@media (max-width: 1207px) {
+  .details__gap {
     display: none;
   }
 
-  .details__title svg {
-    display: none;
+  .details__svg {
+    margin: -48px 0 -14px 0;
   }
 }
 
@@ -2098,6 +2104,20 @@ position sticky у блока .stickyBlock */
     border-radius: 32px;
   }
 
+  .details__svg {
+    margin: -28px 0 -20px 0;
+    width: 197px;
+    height: 178px;
+    border-radius: 30px;
+  }
+
+  .details__svg svg {
+    top: -2px;
+    left: -2px;
+    width: 200px;
+    height: 181px;
+  }
+
   .cost__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2242,6 +2262,12 @@ position sticky у блока .stickyBlock */
 
   .receipt__hr {
     width: 100%;
+  }
+}
+
+@media (min-width: 1206px) and (max-width: 1296px) {
+  .details__svg {
+    margin-right: calc(100vw - 1296px + 170px);
   }
 }
 
