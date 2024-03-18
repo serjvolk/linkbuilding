@@ -1,5 +1,6 @@
 .text-huge{
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
   line-height: 120%;
   font-size: 72px;
   @media (max-width:#{$md3}px) {
@@ -8,17 +9,20 @@
 }
 
 .text-medium{
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
   line-height: 120%;
   font-size: 28px;
 }
 
 .text-default{
-  font-family: 'FixelDisplay-Regular';
+  font-family: 'FixelDisplay';
+  font-weight: 400;
   line-height: 140%;
   font-size: 18px;
 }
 
 .bold{
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay";
+  font-weight: 700;
 }

@@ -17,7 +17,8 @@
 }
 
 .logoSvg{
-	font-family: "FixelDisplay-Medium";
+	font-family: "FixelDisplay";
+	font-weight: 500;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -126,7 +127,8 @@
 		left: 40px;
 		transform: rotate(-15deg);
 		text{
-			font-family: "FixelDisplay-Bold";
+			font-family: "FixelDisplay";
+			font-weight: 700;
 		}
 	}
 }
@@ -314,7 +316,8 @@
 			left: -3px;
 			width: 265px;
 			height: 240px;
-			font-family: "FixelDisplay-SemiBold";
+			font-family: "FixelDisplay";
+			font-weight: 600;
 		}
 	}
 	&__row{
@@ -425,7 +428,8 @@
 	white-space: nowrap;
 	cursor: pointer;
 	&__title {
-		font-family: "FixelDisplay-SemiBold";
+		font-family: "FixelDisplay";
+		font-weight: 600;
 	}
 	&__text {
 		color: rgba(43, 43, 66, 0.5);
@@ -559,7 +563,8 @@
 	align-items: center;
 	padding: 0px 8px;
 	color: $white;
-	font-family: "FixelDisplay-SemiBold";
+	font-family: "FixelDisplay";
+	font-weight: 600;
 	@media (max-width:#{$md4}px) {
 		left: -12px;
 	}

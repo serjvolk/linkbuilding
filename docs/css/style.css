@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay";
   font-display: swap;
   src: url("../fonts/FixelDisplay-Bold.woff") format("woff"), url("../fonts/FixelDisplay-Bold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Medium";
+  font-family: "FixelDisplay";
   font-display: swap;
   src: url("../fonts/FixelDisplay-Medium.woff") format("woff"), url("../fonts/FixelDisplay-Medium.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "FixelDisplay-Regular";
+  font-family: "FixelDisplay";
   font-display: swap;
   src: url("../fonts/FixelDisplay-Regular.woff") format("woff"), url("../fonts/FixelDisplay-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -25,10 +25,10 @@
 }
 
 @font-face {
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
   font-display: swap;
   src: url("../fonts/FixelDisplay-SemiBold.woff") format("woff"), url("../fonts/FixelDisplay-SemiBold.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -168,7 +168,8 @@ h6 {
 .btn {
   padding: 16px 48px;
   border-radius: 99px;
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
   line-height: 120%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -288,7 +289,7 @@ h6 {
 }
 
 body {
-  font-family: "FixelDisplay-Regular";
+  font-family: "FixelDisplay";
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
@@ -463,8 +464,7 @@ video {
 
 .text-trim {
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -671,7 +671,8 @@ video {
 }
 
 .logoSvg {
-  font-family: "FixelDisplay-Medium";
+  font-family: "FixelDisplay";
+  font-weight: 500;
 }
 
 .fScreen {
@@ -696,7 +697,6 @@ video {
   padding: 64px;
   gap: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(#FFFFFF));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%);
   border: 1px solid #FFFFFF;
   -webkit-backdrop-filter: blur(16px);
@@ -779,7 +779,6 @@ video {
   border-radius: 99px;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.25)));
-  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
 }
 
@@ -818,7 +817,8 @@ video {
 }
 
 .fScreenCard .logoSvg text {
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay";
+  font-weight: 700;
 }
 
 .subjects {
@@ -920,7 +920,6 @@ video {
 
 .hoverTrigger:hover + .hoverModal {
   -webkit-transition: opacity 0.15s;
-  -o-transition: opacity 0.15s;
   transition: opacity 0.15s;
   opacity: 1;
 }
@@ -938,7 +937,6 @@ video {
   pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0.3s;
-  -o-transition: opacity 0.15s ease 0.3s;
   transition: opacity 0.15s ease 0.3s;
 }
 
@@ -969,7 +967,6 @@ video {
   padding: 64px;
   gap: 32px;
   isolation: isolate;
-  background: -o-radial-gradient(50% 0%, 100% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
   background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
   border-radius: 64px;
 }
@@ -995,7 +992,8 @@ video {
   left: -3px;
   width: 265px;
   height: 240px;
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
 }
 
 .details__row {
@@ -1050,7 +1048,6 @@ video {
 .receipt:before {
   top: 0px;
   background: -webkit-gradient(linear, right top, left top, from(rgba(43, 43, 66, 0)), color-stop(50.5%, rgba(43, 43, 66, 0.5)), to(rgba(43, 43, 66, 0)));
-  background: -o-linear-gradient(right, rgba(43, 43, 66, 0) 0%, rgba(43, 43, 66, 0.5) 50.5%, rgba(43, 43, 66, 0) 100%);
   background: linear-gradient(270deg, rgba(43, 43, 66, 0) 0%, rgba(43, 43, 66, 0.5) 50.5%, rgba(43, 43, 66, 0) 100%);
   -webkit-filter: drop-shadow(0px 18px 18px rgba(0, 0, 0, 0.25)) drop-shadow(0px 7.52px 7.52px rgba(0, 0, 0, 0.179714)) drop-shadow(0px 4.021px 4.02px rgba(0, 0, 0, 0.149027)) drop-shadow(0px 2.254px 2.254px rgba(0, 0, 0, 0.125)) drop-shadow(0px 1.197px 1.198px rgba(0, 0, 0, 0.100973)) drop-shadow(0px 0.498px 0.498px rgba(0, 0, 0, 0.0702864));
           filter: drop-shadow(0px 18px 18px rgba(0, 0, 0, 0.25)) drop-shadow(0px 7.52px 7.52px rgba(0, 0, 0, 0.179714)) drop-shadow(0px 4.021px 4.02px rgba(0, 0, 0, 0.149027)) drop-shadow(0px 2.254px 2.254px rgba(0, 0, 0, 0.125)) drop-shadow(0px 1.197px 1.198px rgba(0, 0, 0, 0.100973)) drop-shadow(0px 0.498px 0.498px rgba(0, 0, 0, 0.0702864));
@@ -1122,7 +1119,8 @@ video {
 }
 
 .itemCost__title {
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
 }
 
 .itemCost__text {
@@ -1236,7 +1234,8 @@ video {
           align-items: center;
   padding: 0px 8px;
   color: #FFFFFF;
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
 }
 
 .label_black {
@@ -1287,7 +1286,6 @@ video {
   padding: 64px;
   border-radius: 64px;
   gap: 32px;
-  background: -o-radial-gradient(50% 0%, 100% 100%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
   background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(43, 43, 66, 0.3) 53.65%), #2B2B42;
 }
 
@@ -1495,84 +1493,78 @@ video {
 }
 
 .text-huge {
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
   line-height: 120%;
   font-size: 72px;
 }
 
 .text-medium {
-  font-family: "FixelDisplay-SemiBold";
+  font-family: "FixelDisplay";
+  font-weight: 600;
   line-height: 120%;
   font-size: 28px;
 }
 
 .text-default {
-  font-family: "FixelDisplay-Regular";
+  font-family: "FixelDisplay";
+  font-weight: 400;
   line-height: 140%;
   font-size: 18px;
 }
 
 .bold {
-  font-family: "FixelDisplay-Bold";
+  font-family: "FixelDisplay";
+  font-weight: 700;
 }
 
 .lg-0 {
   background: -webkit-gradient(linear, left top, left bottom, from(#83CCFD), to(#45A0E6));
-  background: -o-linear-gradient(top, #83CCFD 0%, #45A0E6 100%);
   background: linear-gradient(180deg, #83CCFD 0%, #45A0E6 100%);
 }
 
 .lg-1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF808A), to(#FF3344));
-  background: -o-linear-gradient(top, #FF808A 0%, #FF3344 100%);
   background: linear-gradient(180deg, #FF808A 0%, #FF3344 100%);
 }
 
 .lg-2 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFE37E), to(#F0BC00));
-  background: -o-linear-gradient(top, #FFE37E 0%, #F0BC00 100%);
   background: linear-gradient(180deg, #FFE37E 0%, #F0BC00 100%);
 }
 
 .lg-3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#88E8E6), to(#3CC2BD));
-  background: -o-linear-gradient(top, #88E8E6 0%, #3CC2BD 100%);
   background: linear-gradient(180deg, #88E8E6 0%, #3CC2BD 100%);
 }
 
 .lg-4 {
   background: -webkit-gradient(linear, left top, left bottom, from(#D766FF), to(#9600CC));
-  background: -o-linear-gradient(top, #D766FF 0%, #9600CC 100%);
   background: linear-gradient(180deg, #D766FF 0%, #9600CC 100%);
 }
 
 .lg-5 {
   background: -webkit-gradient(linear, left top, left bottom, from(#1AD7FF), to(#00A5E6));
-  background: -o-linear-gradient(top, #1AD7FF 0%, #00A5E6 100%);
   background: linear-gradient(180deg, #1AD7FF 0%, #00A5E6 100%);
 }
 
 .lg-6 {
   background: -webkit-gradient(linear, left top, left bottom, from(#EEAC75), to(#D59165));
-  background: -o-linear-gradient(top, #EEAC75 0%, #D59165 100%);
   background: linear-gradient(180deg, #EEAC75 0%, #D59165 100%);
 }
 
 .lg-7 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF7790), to(#F73558));
-  background: -o-linear-gradient(top, #FF7790 0%, #F73558 100%);
   background: linear-gradient(180deg, #FF7790 0%, #F73558 100%);
 }
 
 .lg-8 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FFDA7A), to(#F1A64D));
-  background: -o-linear-gradient(top, #FFDA7A 0%, #F1A64D 100%);
   background: linear-gradient(180deg, #FFDA7A 0%, #F1A64D 100%);
 }
 
 .lg-9 {
   background: -webkit-gradient(linear, left top, left bottom, from(#64FFB5), to(#00A656));
-  background: -o-linear-gradient(top, #64FFB5 0%, #00A656 100%);
   background: linear-gradient(180deg, #64FFB5 0%, #00A656 100%);
 }
 
@@ -1655,11 +1647,9 @@ video {
   width: 50px;
   pointer-events: none;
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(rgb(240, 241, 245)));
-  background: -o-linear-gradient(right, rgba(255, 255, 255, 0), rgb(240, 241, 245));
   background: linear-gradient(270deg, rgba(255, 255, 255, 0), rgb(240, 241, 245));
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -1667,14 +1657,12 @@ video {
   left: auto;
   right: 0px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgb(240, 241, 245)));
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgb(240, 241, 245));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(240, 241, 245));
 }
 
 .scroll__overlayArea.open {
   opacity: 1;
   -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -1844,7 +1832,6 @@ video {
   .ourServices__card {
     -webkit-transition: -webkit-transform 0.15s;
     transition: -webkit-transform 0.15s;
-    -o-transition: transform 0.15s;
     transition: transform 0.15s;
     transition: transform 0.15s, -webkit-transform 0.15s;
   }
@@ -1852,7 +1839,6 @@ video {
   .ourServices__card:hover {
     -webkit-transition: -webkit-transform 0.15s;
     transition: -webkit-transform 0.15s;
-    -o-transition: transform 0.15s;
     transition: transform 0.15s;
     transition: transform 0.15s, -webkit-transform 0.15s;
     -webkit-transform: translateY(-16px);
